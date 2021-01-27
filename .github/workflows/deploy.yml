@@ -1,25 +1,36 @@
-#!/usr/bin/env sh
 
-# abort on errors
-set -e
+name: deploy
 
-# build
-npm run build
-
-# navigate into the build output directory
-cd dist
-
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:InstitutoGloria/eusouagloria.github.io.git main:gh-pages
-
-cd -
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: setup git auth
+        env:
+          email: 'danielsprado12@gmail.com'
+          username: 'dasprado12'
+          access_token: '92384c0dd84e90a59c4af6a7b70456dce399473f'
+        run: |
+            git config --global credential.helper store
+            echo "https://${access_token}:x-oauth-basic@github.com" > ~/.github-credentials
+            git config --global user.email $email
+            git config --global user.name $username
+      - name: deploy to gh-pages
+        run: |
+          npm i
+          NODE_ENV=production 
+          npm run build
+          cd dist
+          git init
+          git add -A
+          git commit -m "🚀 Deploying"
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages
