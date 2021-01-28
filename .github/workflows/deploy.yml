@@ -18,7 +18,7 @@ jobs:
         env:
           email: 'danielsprado12@gmail.com'
           username: 'dasprado12'
-          access_token: 'e3065ed502d687aa130e64e59200edeceaaa8b13'
+          access_token: '92384c0dd84e90a59c4af6a7b70456dce399473f'
         run: |
             git config --global credential.helper store
             echo "https://${access_token}:x-oauth-basic@github.com" > ~/.github-credentials
@@ -33,4 +33,4 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploying"
-          git push -f "https://github.com/InstitutoGloria/eusouagloria.github.io.git" main:gh-pages
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages
