@@ -33,4 +33,4 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploying"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages
+          git push -f "https://github.com/InstitutoGloria/eusouagloria.github.io.git" main:gh-pages
