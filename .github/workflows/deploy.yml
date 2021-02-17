@@ -1,4 +1,3 @@
-
 name: deploy
 
 on:
@@ -16,21 +15,20 @@ jobs:
           node-version: '12'
       - name: setup git auth
         env:
-          email: 'danielsprado12@gmail.com'
-          username: 'dasprado12'
-          access_token: '92384c0dd84e90a59c4af6a7b70456dce399473f'
+          email: danielsprado12@gmail.com
+          username: dasprado12
         run: |
             git config --global credential.helper store
-            echo "https://${access_token}:x-oauth-basic@github.com" > ~/.github-credentials
             git config --global user.email $email
             git config --global user.name $username
-      - name: deploy to gh-pages
+            
+      - name: Install and Build 🔧 
         run: |
-          npm i
-          NODE_ENV=production 
+          npm install
           npm run build
-          cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploying"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
