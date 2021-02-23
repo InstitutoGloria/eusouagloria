@@ -10,7 +10,7 @@ const home = {
     research: {
         title: "Responda a nossa pesquisa!",
         subtitle: "Não se preocupe! Nossa pesquisa é totalmente anônima",
-        button: "Click Here"
+        button: "Clique aqui"
     },
     title: "Instituto Glória"
 }
