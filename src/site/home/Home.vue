@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        Esta é a primeira componente
+        {{ $t("home_page.title") }}
     </div>
 </template>
 
