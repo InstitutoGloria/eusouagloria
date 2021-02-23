@@ -3,7 +3,7 @@
         <div class="container">
             <v-row>
                 <v-col cols="8">
-                    <span class="title">
+                    <span class="title text-h4 mb-3">
                         {{ $t('home_page.research.title') }}
                     </span><br>
                     <span class="white--text">
@@ -85,6 +85,7 @@ export default {
 }
 .title{
     color: #853A94;
+    padding-bottom: 10px;
 }
 .button{
     color: #853A94;
