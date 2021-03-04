@@ -7,6 +7,11 @@ const home = {
         about: "About",
         news: "News"
     },
+    research: {
+        title: "Answer our survey!",
+        subtitle: "Don't worry! Our survey is completely anonymous",
+        button: "Click Here"
+    },
     title: "Gloria Institute"
 }
 
