@@ -3,7 +3,7 @@
         <v-container class="container text-center">
             <p class="title">{{$t('home_page.we.title') }}</p>
             <div class="content">
-            <p class="text-center">
+            <p class=" text-justify">
                {{$t('home_page.we.description') }}
             </p>
             </div>
@@ -29,7 +29,6 @@ export default {
     padding-right: 10%;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.52);
-
 }
 .container{
     display: flexbox;
@@ -45,14 +44,19 @@ export default {
 }
 .content{
     font-weight: 500;
-
+    font-family: 'Montserrat',sans-serif;
+    
     margin: auto;
     max-width: 60%;
     height: fit-content;
+
+    text-align: justify;
+    text-justify: inter-cluster;
 }
 .button{
     color: #853A94;
     font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
     background-color: white;
     border-radius: 30px;
 }
