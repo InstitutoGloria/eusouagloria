@@ -17,6 +17,22 @@ const home = {
         title:"Quem é a Gloria?",
         description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at risus neque. Cras sit amet ligula ut justo commodo porta id ut enim.Nulla est lectus, mollis sit amet vehicula id, volutpat eget mauris.",
         button: "Saiba mais"
+    },
+    projects:{
+        title:"Conheça nossos projetos",
+        convida:{
+            theme:"Saúde",
+            title:"Rede Convida"
+        },
+        game:{
+            theme:"Educação",
+            title:"O Mundo de Gloria"
+        },
+        steam:{
+            theme:"Empoderamento Feminino",
+            title:"STEAM Girls"
+        },
+        button:"Saiba mais +"
     }
 }
 
