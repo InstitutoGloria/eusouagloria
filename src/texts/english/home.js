@@ -7,7 +7,10 @@ const home = {
         about: "About",
         news: "News"
     },
-    title: "Gloria Institute"
+    title: "Gloria Institute",
+    partners: {
+        title: "Our Partners"
+    }
 }
 
 export default home;
