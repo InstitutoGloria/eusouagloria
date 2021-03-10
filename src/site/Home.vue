@@ -3,6 +3,7 @@
         <First/>
         <We/>
         <Partners/>
+        <Projects/>
         <Research/>
         <Data/>
     </div>
