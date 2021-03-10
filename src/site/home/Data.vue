@@ -3,16 +3,18 @@
         <div>
             <v-row align="center" class="h_grid" v-for="(item,index) in content" :key="index">
                 <v-col xl="4" md="4" sm="12">
-                    <v-img :src="require(`@/assets/${item.img}`)"> </v-img>
+                    <v-img style="width:50%" class="image" :src="require(`@/assets/${item.img}`)"> </v-img>
                 </v-col>
-                <v-col xl="4" md="4" sm="12">
+                <v-col xl="3" md="3" sm="12">
                     {{item.text}} <br>
                     <v-btn outlined class="button">{{item.button}}</v-btn>
-                    <v-img :src="require(`@/assets/${item.arrow}`)"></v-img>
-                    {{counter}}
+                </v-col>
+                <v-col xl="1" md="1" sm="12">
+                    <v-img style="width:50%" :src="require(`@/assets/${item.arrow}`)"></v-img>
                 </v-col>
                 <v-col xl="4" md="4" sm="12">
                     {{item.number}}<br>
+                    {{counter}}
                     {{item.second_text}}
                 </v-col>
             </v-row>
@@ -36,7 +38,7 @@ export default {
                     second_text: "MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE.",
                 },
                 {
-                    img: "data-1.png",
+                    img: "data-2.png",
                     text: "TEXT",
                     button: "BOTÃO",
                     arrow: "arrow-right-purple.svg",
@@ -44,7 +46,7 @@ export default {
                     second_text: "SEGUNDO TEXTO",
                 },
                 {
-                    img: "data-1.png",
+                    img: "data-3.png",
                     text: "TEXT",
                     button: "BOTÃO",
                     arrow: "arrow-right-purple.svg",
@@ -68,7 +70,6 @@ export default {
     }
 }
 
-
 </script>
 
 <style scoped>
@@ -79,6 +80,10 @@ export default {
 .button{
     color: #853A94;
     background-color: white;
+    margin-top: 5%;
+}
+.image{
+    margin-left: 30%;
 }
 
 </style>
