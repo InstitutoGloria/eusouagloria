@@ -1,7 +1,7 @@
 <template>
     <v-card flat>
         <v-toolbar flat>
-        <v-toolbar-title>insert_logo</v-toolbar-title>
+        <v-toolbar-title><v-img width=120px src="../assets/images/home/gloria.png"/></v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn text v-for="i in items" :key="i.id">
             {{ $t(`${i.name}`) }}
