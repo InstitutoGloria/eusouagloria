@@ -33,6 +33,21 @@ const home = {
             title:"STEAM Girls"
         },
         button:"Saiba mais +"
+    },
+    data:{
+        button: "Veja Mais",
+        first_card:{
+            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
+            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+        },
+        second_card:{
+            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
+            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+        },
+        third_card:{
+            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
+            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+        },
     }
 }
 
