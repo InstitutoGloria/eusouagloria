@@ -2,10 +2,16 @@
 // home > nome_component > nome_texto > "Texto"
 
 const home = {
+    title: "Gloria Institute",
+
     toolbar: {
         home: "Home",
         about: "About",
         news: "News"
+    },
+    
+    partners: {
+        title: "Our Partners",
     },
     research: {
         title: "Answer our survey!",
@@ -33,7 +39,23 @@ const home = {
             title:"STEAM Girls"
         },
         button:"Find out more +"
+    },
+    data:{
+        button: "More",
+        first_card:{
+            info: "Every 7.2 seconds, a woman is victim of dosmetic violence",
+            counter:"WOMEN HAVE BEEN VICTIM OF DOMESTIC VIOLENCE"
+        },
+        second_card:{
+            info: "Every 1.4 seconds, a woman is a victim of HARASSMENT.",
+            counter:"WOMEN HAVE ALREADY BEEN HARASSED TODAY."
+        },
+        third_card:{
+            info: "Every 6.9 seconds, a woman is a victim of PERSECUTION.",
+            counter:"WOMEN HAVE BEEN PERSECUTTED TODAY."
+        },
     }
+
 }
 
 export default home;
