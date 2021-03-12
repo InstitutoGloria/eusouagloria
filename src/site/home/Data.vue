@@ -69,7 +69,7 @@ export default {
     },
     mounted(){
         this.onResize;
-        this.startInterval();
+        this.startInterval1();
         window.addEventListener("resize", this.onResize, {passive: true});
         
     },
@@ -86,15 +86,12 @@ export default {
             const self = this
             setInterval(function() {
                 self.content[0].number = self.content[0].number + 1;
-                console.log(self.content[0].number);
             }, 7200);
-            setInterval_1(function() {
+            setInterval(function() {
                 self.content[1].number = self.content[1].number + 1;
-                console.log(self.content[1].number);
             }, 1400);
-            setInterval_2(function() {
+            setInterval(function() {
                 self.content[2].number = self.content[2].number + 1;
-                console.log(self.content[2].number);
             }, 6900);
         },
 
