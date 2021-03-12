@@ -2,10 +2,16 @@
 // home > nome_component > nome_texto > "Texto"
 
 const home = {
+    title: "Gloria Institute",
+
     toolbar: {
         home: "Home",
         about: "About",
         news: "News"
+    },
+    
+    partners: {
+        title: "Our Partners",
     },
     research: {
         title: "Answer our survey!",
@@ -49,6 +55,7 @@ const home = {
             counter:"WOMEN HAVE BEEN PERSECUTTED TODAY."
         },
     }
+
 }
 
 export default home;
