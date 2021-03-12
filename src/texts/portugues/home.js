@@ -41,13 +41,14 @@ const home = {
             counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
         },
         second_card:{
-            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
-            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+            info: "A cada 1.4 segundo, uma mulher é vítima de ASSÉDIO no Brasil.",
+            counter:"MULHERES JÁ FORAM ASSEDIADAS HOJE. APENAS NO BRASIL."
         },
         third_card:{
-            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
-            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+            info: "A cada 6.9 segundos, uma mulher é vítima de PERSEGUIÇÃO.",
+            counter:"MULHERES JÁ FORAM AMEDRONTADAS OU PERSEGUIDAS HOJE."
         },
+        
     }
 }
 

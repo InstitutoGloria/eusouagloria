@@ -35,18 +35,18 @@ const home = {
         button:"Find out more +"
     },
     data:{
-        button: "Veja Mais",
+        button: "More",
         first_card:{
             info: "Every 7.2 seconds, a woman is victim of dosmetic violence",
             counter:"WOMEN HAVE BEEN VICTIM OF DOMESTIC VIOLENCE"
         },
         second_card:{
-            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
-            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+            info: "Every 1.4 seconds, a woman is a victim of HARASSMENT.",
+            counter:"WOMEN HAVE ALREADY BEEN HARASSED TODAY."
         },
         third_card:{
-            info: "A cada 7.2 segundos, uma mulher é vítima de VIOLÊNCIA FÍSICA.",
-            counter:"MULHERES JÁ FORAM VÍTIMAS DE VIOLÊNCIA FÍSICA HOJE."
+            info: "Every 6.9 seconds, a woman is a victim of PERSECUTION.",
+            counter:"WOMEN HAVE BEEN PERSECUTTED TODAY."
         },
     }
 }
