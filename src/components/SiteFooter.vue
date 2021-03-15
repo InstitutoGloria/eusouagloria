@@ -3,7 +3,7 @@
         <v-divider/>
         <v-row>
             <v-col cols=4>
-                <v-img class="pt-5">insert_logo</v-img>
+                <v-img class="pt-5" width=130px contain src="../assets/images/home/gloria.png"></v-img>
             </v-col>
             <v-col cols=4>
                 <v-icon class="pl-2 pr-2 pt-5">mdi-twitter</v-icon>
