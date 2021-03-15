@@ -1,11 +1,12 @@
 <template>
-  <v-app>
+  <v-app> 
     <router-view/>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import i18n from "@/plugins/i18n";
 
 export default {
   name: 'App',
@@ -15,8 +16,21 @@ export default {
   },
 
   data: () => ({
-    //
+    currentUrl: ""
   }),
+  created(){
+    this.selectLang();
+  },
+  methods: {
+    selectLang(){
+      let currentUrl = window.location;
+      if(currentUrl.hostname == "gloriainstitute"){
+        i18n.locale = "en"
+      }else{
+        i18n.locale = "pt-br"
+      }
+    }
+  }
 };
 </script>
 
