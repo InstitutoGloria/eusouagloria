@@ -2,7 +2,7 @@
     <div class="home">
         <v-container class="container text-center">
             <p class="title">{{$t('home_page.we.title') }}</p>
-            <div class="content">
+            <div :class="{'content-small': $vuetify.breakpoint. smAndDown, 'content': $vuetify.breakpoint. mdAndUp}">
             <p class=" text-justify">
                {{$t('home_page.we.description') }}
             </p>
@@ -47,6 +47,18 @@ export default {
     
     margin: auto;
     max-width: 60%;
+    height: fit-content;
+
+    text-align: justify;
+    text-justify: inter-cluster;
+}
+
+.content-small{
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    
+    margin: auto;
+    max-width: 80%;
     height: fit-content;
 
     text-align: justify;
