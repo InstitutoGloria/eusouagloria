@@ -4,6 +4,11 @@
 const home = {
     title: "Gloria Institute",
     tagline:"Gloria was born to stop the violence against women and girls",
+    
+    home:{
+        button: "Donate here",
+    },
+    
     toolbar: {
         home: "Home",
         about: "About",

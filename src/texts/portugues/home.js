@@ -4,6 +4,11 @@
 const home = {
     title: "Instituto Glória",
     tagline:"A Gloria nasceu para acabar com a violência contra mulheres e meninas",
+    
+    home:{
+        button: "Doe aqui",
+    },
+   
     toolbar: {
         home: "Início",
         about: "Sobre",
