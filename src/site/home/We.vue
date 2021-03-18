@@ -8,6 +8,7 @@
             </p>
             </div>
             <v-btn outlined class="button">{{$t('home_page.we.button') }}</v-btn>
+            
         </v-container>   
     </div>
 </template>

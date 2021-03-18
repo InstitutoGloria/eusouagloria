@@ -6,7 +6,7 @@
                     <span class="title text-h4 mb-3">
                         {{ $t('home_page.research.title') }}
                     </span><br>
-                    <span class="white--text">
+                    <span class="black--text">
                         {{ $t('home_page.research.subtitle') }}
                     </span>
                 </v-col>
