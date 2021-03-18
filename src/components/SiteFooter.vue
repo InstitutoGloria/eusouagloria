@@ -1,9 +1,11 @@
 <template>
     <div class="footer">
         <v-divider/>
-        <v-row>
+        <v-row class="content">
             <v-col cols=4>
-                <v-img class="pt-5" width=130px contain src="../assets/images/home/gloria.png"></v-img>
+                <div class="text-xs-center">
+                <v-img class="pt-7 imagem" width=130px contain src="../assets/images/home/gloria.png"></v-img>
+                </div>
             </v-col>
             <v-col cols=4>
                 <v-icon class="pl-2 pr-2 pt-5">mdi-twitter</v-icon>
@@ -22,5 +24,12 @@
     text-align: center;
     vertical-align: 100px;
     height: 70px;
+}
+.content{
+    text-align: center;
+}
+.image{
+    
+    text-align: center;
 }
 </style>

@@ -117,7 +117,7 @@ export default {
 #HomePageData{
     padding-left: 10%;
     padding-right: 15%;
-    padding: 3%;
+    padding: 4%;
 }
 .h_grid{
     text-align: center;

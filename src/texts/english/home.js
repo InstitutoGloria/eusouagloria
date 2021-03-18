@@ -21,7 +21,8 @@ const home = {
     research: {
         title: "Answer our survey!",
         subtitle: "Don't worry! Our survey is completely anonymous",
-        button: "Click Here"
+        button: "Click Here",
+        button_send: "Send!"
     },
     title: "Gloria Institute",
     we:{

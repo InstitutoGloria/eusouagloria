@@ -2,7 +2,9 @@
     <div class="home">
         <First/>
         <We/>
+        <v-divider/>
         <Partners/>
+        <v-divider/>
         <Projects/>
         <Research/>
         <Data/>
