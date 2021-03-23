@@ -22,7 +22,12 @@ const home = {
         title: "Answer our survey!",
         subtitle: "Don't worry! Our survey is completely anonymous",
         button: "Click Here",
-        button_send: "Send!"
+        button_send: "Send!",
+        form: {
+            know: "Do you know what physical violence is?",
+            suffer: "Have you ever suffered any kind of violence?",
+            type: "What kind of violence are you most afraid of?",
+        },
     },
     title: "Gloria Institute",
     we:{
@@ -60,6 +65,26 @@ const home = {
             info: "Every 6.9 seconds, a woman is a victim of PERSECUTION.",
             counter:"WOMEN HAVE BEEN PERSECUTTED TODAY."
         },
+    },
+    form: {
+        email: "E-mail",
+        phone: "Phone",
+        birth: "Birth Date",
+        gender: {
+            masc: "Masc",
+            fem: "Fem",
+            other: "Other",
+        },
+        selector: "Select",
+        yes: "Yes",
+        no: "No",
+        violence: {
+            physical: "Physical",
+            sexual: "Sexual",
+            psychological: "Psychological",
+            digital: "Digital",
+        },
+        send: "Enviar"
     }
 
 }

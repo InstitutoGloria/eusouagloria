@@ -11,9 +11,12 @@
                     </span>
                 </v-col>
                 <v-col cols="4" class="pt-8">
-                    <v-btn rounded outlined class="button" @click="form=!form" v-if="!form"><b> {{ $t('home_page.research.button') }} </b></v-btn>
-                    <v-btn rounded outlined class="button-clear" @click="clear" v-if="form"><b> limpar </b></v-btn>
-                    <v-btn rounded outlined class="button-send" v-if="form"><b> Enviar </b></v-btn>
+                    <v-btn rounded outlined class="button" @click="form=!form" v-if="!form && !block"><b> {{ $t('home_page.research.button') }} </b></v-btn>
+                    <span v-if="block">
+                        <p class="poppins text-h5 purple--text">Obrigado!</p>
+                    </span>
+                        <v-btn rounded outlined class="button-clear" @click="clear" v-if="form"><b> X </b></v-btn>
+                        <v-btn rounded outlined class="button-send" @click="sendInfo" v-if="form"><b> Enviar </b></v-btn>     
                 </v-col>
             </v-row>
             <v-expand-transition>
@@ -26,9 +29,9 @@
                                     solo
                                     rounded
                                     v-model="research.email"
-                                    label="E-mail"
+                                    :label="`${ $t('home_page.form.email')}`"
+                                    :hint="`${ $t('home_page.form.email')}`"
                                     :rules="email_rules"
-                                    hint="E-mail"
                                 />
                                 <v-text-field
                                     class="textfield"
@@ -36,8 +39,8 @@
                                     rounded
                                     v-model="research.phone"
                                     v-mask="'(##) ###########'"
-                                    label="Phone"
-                                    hint="Phone"
+                                    :label="`${ $t('home_page.form.phone')}`"
+                                    :hint="`${ $t('home_page.form.phone')}`"
                                     placeholder="(00) 12345-1234"
                                 />
                                 <v-text-field
@@ -46,100 +49,105 @@
                                     rounded
                                     v-model="research.birth"
                                     v-mask="'##/##/####'"
-                                    label="Data de Nascimento"
-                                    hint="Data de Nascimento"
+                                    :label="`${ $t('home_page.form.birth')}`"
+                                    :hint="`${ $t('home_page.form.birth')}`"
                                 />
+                                <div class="flex-center">
+
                                 <v-radio-group
                                         v-model="research.gender"
                                         row
+                                        class="to_center"
                                     >
                                         <v-radio
-                                            label="Masculino"
+                                            :label="`${ $t('home_page.form.gender.masc')}`"
                                             color="#853A94"
                                             value="masc"
                                         ></v-radio>
                                         <v-radio
-                                            label="Feminino"
+                                            :label="`${ $t('home_page.form.gender.fem')}`"
                                             color="#853A94"
                                             value="fem"
                                         ></v-radio>
                                         <v-radio
-                                            label="Outro"
+                                            :label="`${ $t('home_page.form.gender.other')}`"
                                             color="#853A94"
                                             value="other"
                                         ></v-radio>
                                     </v-radio-group>
-                                        <v-select
-                                            :items="states"
-                                            v-model="research.state"
-                                            label="Select"
-                                            dense
-                                        ></v-select>
+                                </div>
+                                <v-select
+                                    :items="states"
+                                    v-model="research.state"
+                                    label="Select"
+                                    dense
+                                ></v-select>
                             </v-form>
                         </v-form>
                     </v-col>
                     <v-col xs="12" sm="6" md="6" lg="6" xl="6">
                         <v-form v-model="valid">
                             <div class="to_center">
-                                <div>
-                                    <p>Você sabe o que é violência física?</p>
+                                <div class="flex-center">
+                                    <p class="font-weight-bold"> {{ $t('home_page.research.form.know') }} </p>
                                     <v-radio-group
                                         v-model="research.know"
                                         row
                                     >
                                         <v-radio
-                                            label="Sim"
+                                            :label="`${ $t('home_page.form.yes')}`"
                                             color="#853A94"
                                             value="true"
                                         ></v-radio>
                                         <v-radio
-                                            label="Não"
+                                            :label="`${ $t('home_page.form.no')}`"
                                             color="#853A94"
                                             value="false"
                                         ></v-radio>
                                     </v-radio-group>
                                 </div>
-                                <div>
-                                    <p>Você já sofreu algum tipo de violência?</p>
+                                <div class="flex-center">
+                                    <p class="font-weight-bold">{{ $t('home_page.research.form.suffer') }}</p>
                                     <v-radio-group
                                         v-model="research.suffer"
                                         row
+                                        justify-center
                                     >
                                         <v-radio
-                                            label="Sim"
+                                            :label="`${ $t('home_page.form.yes')}`"
                                             color="#853A94"
                                             value="true"
                                         ></v-radio>
                                         <v-radio
-                                            label="Não"
+                                            :label="`${ $t('home_page.form.no')}`"
                                             color="#853A94"
                                             value="false"
                                         ></v-radio>
                                     </v-radio-group>
                                 </div>
-                                <div>
-                                    <p>Qual tipo de violência você tem mais medo?</p>
+                                <div class="flex-center">
+                                    <p class="font-weight-bold">{{ $t('home_page.research.form.type') }}</p>
                                     <v-radio-group
                                         v-model="research.fear"
                                         row
                                     >
                                         <v-radio
-                                            label="Física"
+                                            :label="`${ $t('home_page.form.violence.physical')}`"
                                             color="#853A94"
                                             value="physical"
                                         ></v-radio>
                                         <v-radio
-                                            label="Sexual"
+                                            :label="`${ $t('home_page.form.violence.sexual')}`"
                                             color="#853A94"
                                             value="sexual"
                                         ></v-radio>
                                         <v-radio
-                                            label="Psicológica"
+                                            :label="`${ $t('home_page.form.violence.psychological')}`"
                                             color="#853A94"
-                                            value="psychological "
+                                            value="psychological"
                                         ></v-radio>
                                         <v-radio
-                                            label="Digital"
+                                            :label="`${ $t('home_page.form.violence.digital')}`"
                                             color="#853A94"
                                             value="digital"
                                         ></v-radio>
@@ -166,7 +174,8 @@ export default {
     data(){
         return {
             subtext: "Não se preocupe! Nossa pesquisa é totalmente anônima",
-            form: true,
+            form: false,
+            block: false,
             research: {
                 email: '',
                 phone: '',
@@ -200,6 +209,11 @@ export default {
         clear(){
             Object.assign(this.research, this.research_default);
             this.form = false
+        },
+        sendInfo(){
+            alert("Sending info...")
+            this.block = true
+            this.form = false
         }
     }
 }
@@ -215,6 +229,9 @@ export default {
     box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.52);
 }
 
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
 
 .container{
     padding-top: 44px;
@@ -245,5 +262,11 @@ export default {
 
 .textfield{
     color: #853A94;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 </style>

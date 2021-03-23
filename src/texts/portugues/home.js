@@ -23,7 +23,12 @@ const home = {
         title: "Responda a nossa pesquisa!",
         subtitle: "Não se preocupe! Nossa pesquisa é totalmente anônima",
         button: "Clique aqui",
-        button_send: "Enviar!"
+        button_send: "Enviar!",
+        form: {
+            know: "Você sabe o que é violência física?",
+            suffer: "Você já sofreu algum tipo de violência?",
+            type: "Qual tipo de violência você tem mais medo?",
+        },
     },
 
     we:{
@@ -63,6 +68,26 @@ const home = {
             counter:"MULHERES JÁ FORAM AMEDRONTADAS OU PERSEGUIDAS HOJE."
         },
         
+    },
+    form: {
+        email: "E-mail",
+        phone: "Telefone",
+        birth: "Data de Nascimento",
+        gender: {
+            masc: "Masculino",
+            fem: "Feminino",
+            other: "Outros",
+        },
+        selector: "Selecione",
+        yes: "Sim",
+        no: "Não",
+        violence: {
+            physical: "Física",
+            sexual: "Sexual",
+            psychological: "Psicológica",
+            digital: "Digital",
+        },
+        send: "Enviar"
     }
 
 }
