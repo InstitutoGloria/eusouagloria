@@ -22,7 +22,8 @@ const home = {
     research: {
         title: "Responda a nossa pesquisa!",
         subtitle: "Não se preocupe! Nossa pesquisa é totalmente anônima",
-        button: "Clique aqui"
+        button: "Clique aqui",
+        button_send: "Enviar!"
     },
 
     we:{

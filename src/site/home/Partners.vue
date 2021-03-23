@@ -5,7 +5,7 @@
         </div>
         <div class="images">
             <v-row align="center" justify="center">
-                <v-col class="image" xl="1" lg="2" md="2" sm="2" cols="3" v-for="(img, idx) in images" :key="idx">
+                <v-col class="image" xl="1" lg="1" md="2" sm="2" v-for="(img, idx) in images" :key="idx">
                     <span>
                         <v-img
                             :src="require(`@/assets/images/parceiros/${img.file}`)"
@@ -51,9 +51,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .title{
-
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     text-align: center;
 }
 
@@ -77,8 +76,8 @@ export default {
 }
 
 .partners{
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 </style>
