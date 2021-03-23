@@ -1,7 +1,7 @@
 <template>
     <div class="home">
        <v-container class="container">
-            <p class="title text-center">{{$t('home_page.projects.title') }}</p>
+            <p class="font-title text-center">{{$t('home_page.projects.title') }}</p>
                 <div class="row">
                     <div class="col-md-12">
                     <div id="carousel-home-resources" class="carousel-home-resources">

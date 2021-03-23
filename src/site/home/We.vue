@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <v-container class="container text-center">
-            <p class="title">{{$t('home_page.we.title') }}</p>
+            <p class="font-title">{{$t('home_page.we.title') }}</p>
             <div :class="{'content-small': $vuetify.breakpoint. smAndDown, 'content': $vuetify.breakpoint. mdAndUp}">
             <p class=" text-justify">
                {{$t('home_page.we.description') }}
