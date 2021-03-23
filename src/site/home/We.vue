@@ -27,7 +27,6 @@ export default {
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.52);
 }
 .container{
     display: flexbox;
