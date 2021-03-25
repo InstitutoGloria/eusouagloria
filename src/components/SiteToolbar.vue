@@ -42,7 +42,18 @@ export default {
             currentLang: "en"
         }
     },
+    created(){
+        this.selectLang();
+    },
     methods: {
+        selectLang(){
+        let currentUrl = window.location;
+        if(currentUrl.hostname == "gloriainstitute"){
+            this.currentLang = "en"
+        }else{
+            this.currentLang = "pt-br"
+        }
+        },
         changeLocale(locale) {
             i18n.locale = locale;
             this.currentLang = i18n.locale;

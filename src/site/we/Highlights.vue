@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="we">
         <v-container class="container text-center">
             <p class="font-title">{{$t('home_page.we.title') }}</p>
             <div :class="{'content-small': $vuetify.breakpoint. smAndDown, 'content': $vuetify.breakpoint. mdAndUp}">
@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <style scoped>
-.home{
+.we{
     background-color: #FFFFFF;
     padding-left: 10%;
     padding-right: 10%;
