@@ -3,18 +3,19 @@
         <div class="title">
             <span class="font-title">{{ $t('home_page.partners.title') }}</span>
         </div>
-        <div class="images">
-            <v-row align="center" justify="center">
-                <v-col class="image" xl="1" lg="1" md="2" sm="2" v-for="(img, idx) in images" :key="idx">
-                    <span>
-                        <v-img
+        <div id="scroll">
+            <div class="Wrapper">
+                <div class="column">
+                    <div class="scroll">
+                        <img
+                            v-for="img in images" :key="img.file" 
                             :src="require(`@/assets/images/parceiros/${img.file}`)"
-                            max="100"
+                            contain
+                            height="100"
                         />
-                    </span>
-                </v-col>
-            </v-row>
-
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -50,23 +51,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-.title{
-    padding-top: 3%;
-    padding-bottom: 1%;
-    text-align: center;
-}
-
-.font-title{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
-}
-
-.images{
-    padding-left: 6%;
-    padding-right: 6%;
+.img{
+    float: left;
+    widows: 33.33%;
+    padding: 5px;
 }
 
 .image{
