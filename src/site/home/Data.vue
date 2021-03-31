@@ -155,7 +155,7 @@ export default {
     line-height: 74px;
     letter-spacing: .1em;
     text-shadow: -2px -2px 0 #7c1791, 2px -2px 0 #7c1791, -2px 2px 0 #7c1791, 2px 2px 0 #7c1791;
-    color: #fff;
+    color: #d79be2;
     font-size: 48px;
     text-align: center;
 }
