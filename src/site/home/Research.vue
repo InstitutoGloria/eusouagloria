@@ -16,7 +16,7 @@
                         <p class="poppins text-h5 purple--text">Obrigado!</p>
                     </span>
                         <v-btn rounded outlined class="button-clear" @click="clear" v-if="form"><b> X </b></v-btn>
-                        <v-btn rounded outlined class="button-send" @click="sendInfo" v-if="form"><b> Enviar </b></v-btn>     
+                             
                 </v-col>
             </v-row>
             <v-expand-transition>
@@ -156,9 +156,29 @@
                             </div>
                         </v-form>
                     </v-col>
+                    <v-col cols="12">
+                        <div>
+                            <v-btn small rounded @click="terms = !terms">Ver Termos de Uso de dados</v-btn>
+                            <v-checkbox v-model="checkbox" label="Li e concordo com os termos apresentados">
+
+                            </v-checkbox>
+                            <v-btn rounded outlined class="button-send" @click="sendInfo" v-if="form"><b> Enviar </b></v-btn>
+                        </div>
+                    </v-col>
                 </v-row>
             </v-expand-transition>
         </div>
+
+            <div class="text-center">
+                <v-dialog
+                    v-model="terms"
+                    width="500"
+                >
+                <v-card>Termos de Uso de Dados</v-card>
+                <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc</v-card-text>
+                </v-dialog>
+            </div>
+        
     </div>
 </template>
 
@@ -173,8 +193,10 @@ export default {
     },
     data(){
         return {
+            checkbox: false,
+            terms: false,
             subtext: "Não se preocupe! Nossa pesquisa é totalmente anônima",
-            form: false,
+            form: true,
             block: false,
             research: {
                 email: '',
@@ -211,9 +233,13 @@ export default {
             this.form = false
         },
         sendInfo(){
-            alert("Sending info...")
-            this.block = true
-            this.form = false
+            if(this.checkbox){
+                alert("Sending info...")
+                this.block = true
+                this.form = false
+            }else{
+                alert("Você precisa concordar com os termos de uso!")
+            }
         }
     }
 }
