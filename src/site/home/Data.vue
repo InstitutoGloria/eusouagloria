@@ -7,7 +7,7 @@
                 </v-col>
                 <v-col xl="3" md="3" sm="12">
                     <span class="middle-text">
-                        {{$t(item.text)}} <br>
+                        {{$t(item.text) | number }} <br>
                     </span>
                     <v-btn outlined rounded class="button">{{$t(item.button)}}</v-btn>
                 </v-col>
@@ -30,7 +30,13 @@
 
 <script>
 import{showAt, hideAt} from 'vue-breakpoints';
+
+
 export default {
+    components:{
+        showAt,
+        hideAt,
+    },
     data(){
         return{
             counter: 5,
@@ -61,11 +67,13 @@ export default {
                     second_text: "home_page.data.first_card.counter",
                 },
             ],
+            teste: 0
         }
     },
-    components:{
-        showAt,
-        hideAt,
+    filters: {
+        number(value){
+            return value
+        }
     },
     mounted(){
         this.onResize;
@@ -73,15 +81,16 @@ export default {
         window.addEventListener("resize", this.onResize, {passive: true});
         
     },
+    watch: {
+        content: function(val){
+            console.log(val)
+            this.teste++
+        }
+    },
     methods:{
         onResize(){
             this.is_mobile = window.innerWidth < 960;
         },
-        /* todo: function(){           
-        this.counter = setInterval(function(){
-            this.counter++;
-        }.bind(this), 3000); */
-
         startInterval1: function () {
             const self = this
             setInterval(function() {
@@ -159,4 +168,6 @@ export default {
     font-size: 48px;
     text-align: center;
 }
+
+.counter:
 </style>

@@ -196,7 +196,7 @@ export default {
             checkbox: false,
             terms: false,
             subtext: "Não se preocupe! Nossa pesquisa é totalmente anônima",
-            form: true,
+            form: false,
             block: false,
             research: {
                 email: '',
