@@ -169,5 +169,4 @@ export default {
     text-align: center;
 }
 
-.counter:
 </style>
