@@ -26,6 +26,7 @@ export default {
         return {
             images: [
                 { file: "qubo.svg" },
+                { file: "ddd.png" },
                 // { file: "cosmobots.png" },
                 { file: "unb.svg" },
                 { file: "embassy.png" },
@@ -38,9 +39,15 @@ export default {
                 { file: "brasscom.png" },
                 { file: "caravela.png" },
                 { file: "handtalk.png" },
-                { file: "ddd.png" },
-                // { file: "freefree.png" },
                 { file: "AD&M.png" },
+                { file: "cnpq.jpg" },
+                { file: "logo_genesys.png" },
+                { file: "ambev_voa.png" },
+                { file: "TechSoup.jpg" },
+                { file: "mlabs.png" },
+                { file: "pactoglobal.jpg" },
+
+                // { file: "freefree.png" },
                 // { file: "seedin.png" },
             ]
         }
