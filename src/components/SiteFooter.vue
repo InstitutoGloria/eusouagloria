@@ -2,18 +2,18 @@
     <div class="footer">
         <v-divider/>
         <v-row class="content">
-            <v-col cols=4>
-                <div class="text-xs-center">
-                <v-img class="pt-7 imagem" width=130px contain src="../assets/images/home/gloria.png"></v-img>
+            <v-col class="pl-2 pr-2 pt-7" cols=4>
+                <div class="d-flex flex-column justify-space-between align-center">
+                    <v-img width=130px contain src="../assets/images/home/gloria.png"></v-img>
                 </div>
             </v-col>
             <v-col cols=4>
-                <v-icon class="pl-2 pr-2 pt-5">mdi-twitter</v-icon>
-                <v-icon class="pl-2 pr-2 pt-5">mdi-facebook</v-icon>
-                <v-icon class="pl-2 pr-2 pt-5">mdi-instagram</v-icon>
+                <v-icon class="pl-2 pr-2 pt-6">mdi-twitter</v-icon>
+                <v-icon class="pl-2 pr-2 pt-6">mdi-facebook</v-icon>
+                <v-icon class="pl-2 pr-2 pt-6">mdi-instagram</v-icon>
             </v-col>
             <v-col cols=4>
-                <div class="text-caption pt-6 copyright">Copyright {{ new Date().getFullYear() }}</div>
+                <div class="text-caption pt-7 copyright">Copyright {{ new Date().getFullYear() }}</div>
             </v-col>
         </v-row>
     </div>
@@ -27,9 +27,6 @@
 }
 .content{
     text-align: center;
-}
-.image{
-    
-    text-align: center;
+    bottom: 0%;
 }
 </style>
