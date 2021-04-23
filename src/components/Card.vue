@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card >
-      <v-img height="125" tile src="https://loremflickr.com/250/370/paris/?random=1" dark>
+      <v-img width="200" height="125" tile src="https://loremflickr.com/250/370/paris/?random=1" dark>
       </v-img> 
 
       <div class="d-flex flex-no-wrap justify-space-between black--text">
@@ -11,7 +11,6 @@
             {{ person.job }} <br />
           </v-card-text>
         </div>
-
       </div>
     </v-card>
   </div>

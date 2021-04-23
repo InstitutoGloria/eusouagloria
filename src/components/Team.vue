@@ -1,9 +1,6 @@
 <template>
   <div class="team">
     <v-container fluid>
-      
-      <main-title :title="`Coordenadores do projeto`" />
-
         <div id="carousel-home-resources" class="carousel-home-resources">
             <carousel-3d 
                 :perspective="0"
@@ -16,22 +13,21 @@
                 :disable3d="true"
                 :clickable="true">
             <slide v-for="(head,index) in heads " :key="index" :index="head.index">
-                <figcaption class="subtitle">{{$t(`${head.department}`)}}</figcaption>
-                
+                <figcaption class="subtitle">{{$t(`${head.department}`)}}</figcaption> 
                 <v-img @click="filterMembers( $t(`${head.department}`) )" :src='head.url' />
             </slide>   
             </carousel-3d>  
         </div>      
     </v-container>
+    
+      <div class="text-center container">
+        <p class=" text-center font-title">{{this.current_option}}</p>
+      </div>
+    
     <v-row>
       <v-col
         v-for="(item, i) in current_team"
-        :key="item.key"
-        xs="12"
-        sm="12"
-        md="6"
-        xl="4"
-      >
+        :key="item.key">
         <profile :person="item" :index="i" />
       </v-col>
     </v-row>
@@ -50,10 +46,6 @@ export default {
     profile
   },
   data: () => ({
-    chardware: "lighten-5",
-    csoftware: "lighten-5",
-    csecurity: "lighten-5",
-    cquality: "lighten-5",
     current_team: [],
     left_team: [],
     current_option: "",
