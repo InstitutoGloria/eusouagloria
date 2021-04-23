@@ -10,7 +10,7 @@
         </v-container>
         <v-divider/>
         <v-container class="container text-center">
-            <div id="carousel-home-resources" class="carousel-home-resources">
+            <!-- <div id="carousel-home-resources" class="carousel-home-resources">
                 <carousel-3d 
                     :perspective="0"
                     :border="0"
@@ -24,23 +24,24 @@
                 <slide v-for="(head,index) in heads " :key="index" :index="head.index">
                     <figcaption class="subtitle">{{$t(`${head.department}`)}}</figcaption>
                     
-                    <v-img :src='head.url' />
+                    <v-img v-on:click="call_team( $t(`${head.department}`) )" :src='head.url' />
                 </slide>   
                 </carousel-3d>  
-            
-            </div>
-                
+            </div> -->
+            <Team></Team>
         </v-container>   
     </div>
 </template>
 
 <script>
 import {Carousel3d, Slide} from 'vue-carousel-3d'
+import Team from '../../components/Team'
 
 export default {
     components: {
         Carousel3d,
-        Slide
+        Slide,
+        Team
     }, 
     data(){
         return {
@@ -54,6 +55,11 @@ export default {
                 { department:"we_page.organogram.proj.department", head: "we_page.organogram.proj.head", url:"https://loremflickr.com/250/370/paris/?random=6", index:6},
                 { department:"we_page.organogram.com.department", head: "we_page.organogram.com.head", url:"https://loremflickr.com/250/370/paris/?random=7", index:7},
             ],
+        }
+    },
+    methods:{
+        call_team(name){
+            
         }
     }
 }
