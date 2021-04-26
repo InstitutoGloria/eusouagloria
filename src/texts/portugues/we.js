@@ -38,6 +38,25 @@ const we = {
             department:"Communications"
         },
 
+    },
+    projects:{
+        title:"About us",
+        convida:{
+            head:"Cristina Castro",
+            department:"convida"
+        },
+        gloria:{
+            head:"Cristina Castro",
+            department:"gloria"
+        },
+        steam:{
+            head:"Cristina Castro",
+            department:"steam"
+        },
+        game:{
+            head:"Cristina Castro",
+            department:"game"
+        }
     }
 
 }

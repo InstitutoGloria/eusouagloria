@@ -10,51 +10,30 @@
         </v-container>
         <v-divider/>
         <v-container class="container text-center">
-            <!-- <div id="carousel-home-resources" class="carousel-home-resources">
-                <carousel-3d 
-                    :perspective="0"
-                    :border="0"
-                    :width="250"
-                    :controls-visible="true"
-                    :space="250"
-                    :scaling="0"
-                    :display="3"
-                    :disable3d="true"
-                    :clickable="true">
-                <slide v-for="(head,index) in heads " :key="index" :index="head.index">
-                    <figcaption class="subtitle">{{$t(`${head.department}`)}}</figcaption>
-                    
-                    <v-img v-on:click="call_team( $t(`${head.department}`) )" :src='head.url' />
-                </slide>   
-                </carousel-3d>  
-            </div> -->
             <Team></Team>
         </v-container>   
+        <v-divider/>
+        <v-container class="container text-center">
+            <TeamProj></TeamProj>
+        </v-container> 
     </div>
 </template>
 
 <script>
 import {Carousel3d, Slide} from 'vue-carousel-3d'
 import Team from '../../components/Team'
+import TeamProj from '../../components/TeamProj'
 
 export default {
     components: {
         Carousel3d,
         Slide,
-        Team
+        Team,
+        TeamProj
     }, 
     data(){
         return {
-            heads: [
-                { department:"we_page.organogram.ceo.department", head: "we_page.organogram.ceo.head", url:"https://loremflickr.com/250/370/paris/?random=1", index:0},
-                { department:"we_page.organogram.business.department", head: "we_page.organogram.business.head", url:"https://loremflickr.com/250/370/paris/?random=8", index:1},
-                { department:"we_page.organogram.legal.department", head: "we_page.organogram.legal.head", url:"https://loremflickr.com/250/370/paris/?random=2", index:2},
-                { department:"we_page.organogram.tech.department", head: "we_page.organogram.tech.head", url:"https://loremflickr.com/250/370/paris/?random=3", index:3},
-                { department:"we_page.organogram.fin.department", head: "we_page.organogram.fin.head", url:"https://loremflickr.com/250/370/paris/?random=4", index:4},
-                { department:"we_page.organogram.gov.department", head: "we_page.organogram.gov.head", url:"https://loremflickr.com/250/370/paris/?random=5", index:5},
-                { department:"we_page.organogram.proj.department", head: "we_page.organogram.proj.head", url:"https://loremflickr.com/250/370/paris/?random=6", index:6},
-                { department:"we_page.organogram.com.department", head: "we_page.organogram.com.head", url:"https://loremflickr.com/250/370/paris/?random=7", index:7},
-            ],
+            
         }
     },
     methods:{

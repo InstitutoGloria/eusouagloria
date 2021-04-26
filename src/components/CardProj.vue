@@ -1,9 +1,6 @@
 <template>
   <div>
     <v-card >
-      <v-img width="200" height="225" tile src="https://loremflickr.com/250/370/paris/?random=1" dark>
-      </v-img> 
-
       <div class="d-flex flex-no-wrap justify-space-between black--text">
         <div class="content-body">
           <v-card-title class="headline"> {{ person.name }} </v-card-title>

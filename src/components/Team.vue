@@ -21,6 +21,7 @@
     </v-container>
     
       <div class="text-center container">
+        <!-- <v-img max-width="100" src="../assets/images/vector1.png"/> -->
         <p class=" text-center font-title">{{this.current_option}}</p>
       </div>
     
