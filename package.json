@@ -8,23 +8,24 @@
     "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.11.0",
+    "npm-check-updates": "^11.5.3",
     "vue": "^2.6.11",
     "vue-breakpoints": "^1.1.0",
     "vue-carousel-3d": "^1.0.1",
-    "vue-i18n": "^8.22.4",
+    "vue-i18n": "^8.24.3",
     "vue-router": "^3.2.0",
     "vue-the-mask": "^0.11.1",
-    "vuetify": "^2.4.0"
+    "vuetify": "^2.4.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-plugin-router": "^4.5.0",
-    "@vue/cli-service": "^4.5.0",
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-plugin-router": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
     "execa": "latest",
-    "sass": "^1.32.0",
+    "sass": "^1.32.11",
     "sass-loader": "^10.0.0",
-    "vue-cli-plugin-vuetify": "^2.1.0",
+    "vue-cli-plugin-vuetify": "^2.3.1",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
   },
