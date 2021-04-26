@@ -1,0 +1,4 @@
+[submodule "path_to_submodule"] 
+  path = path_to_submodule 
+  url = https://github.com/InstitutoGloria/eusouagloria.github.io.git
+  
