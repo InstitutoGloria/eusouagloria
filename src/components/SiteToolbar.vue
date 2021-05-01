@@ -3,7 +3,7 @@
         <v-toolbar flat>
         <v-toolbar-title><v-img width=160px src="../assets/images/home/gloria.png"/></v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn text v-for="i in items" :key="i.id">
+        <v-btn text v-for="i in items" :key="i.id" :to="i.routeName">
             {{ $t(`${i.name}`) }}
         </v-btn>
         <v-menu offset-y>
@@ -31,9 +31,9 @@ export default {
     data(){
         return {
             items: [
-                { id: 1, name: "home_page.toolbar.home" },
-                { id: 2, name: "home_page.toolbar.news" },
-                { id: 3, name: "home_page.toolbar.about" },
+                { id: 1, name: "home_page.toolbar.home", routeName:"/" },
+                { id: 2, name: "home_page.toolbar.news",routeName:"/news" },
+                { id: 3, name: "home_page.toolbar.about", routeName:"/we"},
             ],
             languages: [
                 { id: 'en', name: 'English', flag: '' },
@@ -42,7 +42,18 @@ export default {
             currentLang: "en"
         }
     },
+    created(){
+        this.selectLang();
+    },
     methods: {
+        selectLang(){
+        let currentUrl = window.location;
+        if(currentUrl.hostname == "gloriainstitute"){
+            this.currentLang = "en"
+        }else{
+            this.currentLang = "pt-br"
+        }
+        },
         changeLocale(locale) {
             i18n.locale = locale;
             this.currentLang = i18n.locale;
