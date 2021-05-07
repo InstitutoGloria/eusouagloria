@@ -10,30 +10,9 @@ const MembersProj = [
         - não usar acentos ou cedilha.
     */
     {
-      key: "Cristina",
-      name: "Cristina Castro",
-      job: "Chief Executive Office",
-      belong: true,
-      lab: {
-        active: true,
-        area: "gloria"
-      }
-    },
-    {
-      key: "Cristina",
-      name: "Cristina Castro",
-      job: "Chief Executive Office",
-      belong: true,
-      lab: {
-        active: true,
-        area: "gloria"
-      }
-    },
-    {
-      key: "Cristina",
-      name: "Cristina Castro",
-      job: "Chief Executive Office",
-      
+      key: "Beatriz",
+      name: "Beatriz Carneiro Passos",
+      job: "medicina",
       belong: true,
       lab: {
         active: true,
@@ -41,9 +20,18 @@ const MembersProj = [
       }
     },
     {
-      key: "Cristina",
-      name: "Cristina Castro",
-      job: "Chief Executive Office",
+      key: "Fernanda",
+      name: "Fernanda Gama Neves da Silva",
+      job: "medicina",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },{
+      key: "Isabella",
+      name: "Isabella Lopes de Oliveira",
+      job: "medicina",
       belong: true,
       lab: {
         active: true,
@@ -51,26 +39,88 @@ const MembersProj = [
       }
     },
     {
-      key: "Daniel",
-      name: "Daniel Prado",
-      job: "Brabo do insta",
+      key: "João",
+      name: "João Paulo Frota Damasio",
+      job: "medicina",
       belong: true,
       lab: {
         active: true,
-        area: "game"
+        area: "convida"
       }
     },
-     // template
-    // {
-    //     key: "x",
-    //     name: "",
-    //     job: "Area atuação",
-    //     picture: "man",
-    //     lab: {
-    //     active: false,
-    //     area: "xxxxxxxxxxx",
-    // }
-    // },
+    {
+      key: "Kamilla",
+      name: "Kamilla Gonçalves de Souza",
+      job: "medicina",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Rachel",
+      name: "Rachel Borille de Almeida",
+      job: "medicina",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Rebeca",
+      name: "Rebeca Barbara da Silva Rios",
+      job: "medicina",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Savia",
+      name: "Sávia Braga Tenório Dantas",
+      job: "medicina",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Alomar",
+      name: "Alomar K. Fernandes de Medeiros",
+      job: "desenvolvedor",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Antonio",
+      name: "Antônio Vinícius Nunes de Alencar",
+      job: "desenvolvedor",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+    {
+      key: "Heverton",
+      name: "Heverton Barbosa da Mota Bezerra",
+      job: "desenvolvedor",
+      belong: true,
+      lab: {
+        active: true,
+        area: "convida"
+      }
+    },
+
+
+
   ];
   
   export default MembersProj;
