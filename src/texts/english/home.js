@@ -10,6 +10,7 @@ const home = {
     },
     
     toolbar: {
+        manifest: "Manifest",
         home: "Home",
         about: "About",
         news: "News"
@@ -23,6 +24,7 @@ const home = {
         subtitle: "Don't worry! Our survey is completely anonymous",
         button: "Click Here",
         button_send: "Send!",
+        thankyou: "Thank You!",
         form: {
             know: "Do you know what physical violence is?",
             suffer: "Have you ever suffered any kind of violence?",

@@ -13,10 +13,9 @@
                 <v-col cols="4" class="pt-8">
                     <v-btn rounded outlined class="button" @click="form=!form" v-if="!form && !block"><b> {{ $t('home_page.research.button') }} </b></v-btn>
                     <span v-if="block">
-                        <p class="poppins text-h5 purple--text">Obrigado!</p>
+                        <p class="poppins text-h5 purple--text"> {{ $t('home_page.research.thankyou') }} </p>
                     </span>
                         <v-btn rounded outlined class="button-clear" @click="clear" v-if="form"><b> X </b></v-btn>
-                             
                 </v-col>
             </v-row>
             <v-expand-transition>
@@ -53,7 +52,6 @@
                                     :hint="`${ $t('home_page.form.birth')}`"
                                 />
                                 <div class="flex-center">
-
                                 <v-radio-group
                                         v-model="research.gender"
                                         row
@@ -156,7 +154,7 @@
                             </div>
                         </v-form>
                     </v-col>
-                    <v-col cols="12">
+                    <v-col cols="12" class="content-send-form">
                         <div>
                             <v-btn small rounded @click="terms = !terms">Ver Termos de Uso de dados</v-btn>
                             <v-checkbox v-model="checkbox" label="Li e concordo com os termos apresentados">
@@ -170,12 +168,13 @@
         </div>
 
             <div class="text-center">
-                <v-dialog
-                    v-model="terms"
-                    width="500"
-                >
-                <v-card>Termos de Uso de Dados</v-card>
+                <v-dialog v-model="terms" width="500">
+                <v-card>
+                    <v-card-title>
+                        Termos de Uso de Dados
+                    </v-card-title>
                 <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc</v-card-text>
+                </v-card>
                 </v-dialog>
             </div>
         
@@ -246,6 +245,11 @@ export default {
 </script>
 
 <style scoped>
+.content-send-form{
+    text-align: center;
+    align-content: center;
+}
+
 .home{
     text-align: center;
     background-color: #FFC79F;
@@ -279,7 +283,7 @@ export default {
 
 .button-send{
     color: #853A94;
-    background-color: rgb(148, 240, 145);
+    background-color: rgb(129, 216, 126);
 }
 
 .to_center{

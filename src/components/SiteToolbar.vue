@@ -3,12 +3,15 @@
         <v-toolbar flat>
         <v-toolbar-title><v-img width=160px src="../assets/images/home/gloria.png"/></v-toolbar-title>
         <v-spacer></v-spacer>
+        <v-btn text>
+            {{ $t('home_page.toolbar.manifest') }}
+        </v-btn>
         <v-btn text v-for="i in items" :key="i.id" :to="i.routeName">
             {{ $t(`${i.name}`) }}
         </v-btn>
         <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
-                <v-btn color="#853A94" dark v-bind="attrs" v-on="on">
+                <v-btn outlined color="#853A94" dark v-bind="attrs" v-on="on">
                     {{ currentLang }}
                 </v-btn>
             </template>

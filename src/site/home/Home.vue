@@ -3,7 +3,7 @@
         <div :class="{'hero-img-small': $vuetify.breakpoint. smAndDown, 'hero-img': $vuetify.breakpoint. mdAndUp}">
             <p class="hero-title">{{ $t("home_page.title") }}</p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("home_page.tagline") }}</p>
-            <v-btn :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}"> {{$t('home_page.home.button') }}</v-btn>
+            <v-btn large :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}"> {{$t('home_page.home.button') }}</v-btn>
         </div>
         <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
             <v-img height="50vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
