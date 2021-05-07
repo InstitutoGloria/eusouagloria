@@ -6,7 +6,7 @@
             <v-btn large :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}"> {{$t('home_page.home.button') }}</v-btn>
         </div>
         <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
-            <v-img height="50vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
+            <v-img height="45vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
         </div>
     </div>
    
