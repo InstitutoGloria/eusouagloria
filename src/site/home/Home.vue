@@ -6,7 +6,7 @@
             <v-btn large :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}"> {{$t('home_page.home.button') }}</v-btn>
         </div>
         <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
-            <v-img height="45vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
+            <v-img height="65vh" position=" center -7vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
         </div>
     </div>
    
@@ -27,6 +27,7 @@ export default {
 <style>
 .home-home{
     height: 110vh;
+    margin-bottom: 10%;
 }
 .home-home-small{
     height: 80vh;
@@ -34,12 +35,14 @@ export default {
 
 .gloriaimg{
     position: relative;
-    top: -35vh;
+    /* top: -35vh; */
+     height: 100vh;
 }
 
 .gloriaimg-small{
     position: relative;
-    top: -10vh;
+    /* top: -10vh; */
+    height: 100vh;
 }
 
 .hero-img{
