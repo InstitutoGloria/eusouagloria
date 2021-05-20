@@ -11,7 +11,7 @@
                             v-for="img in images" :key="img.file" 
                             :src="require(`@/assets/images/parceiros/${img.file}`)"
                             contain
-                            height="90"
+                            :height='img.height'
                         />
                     </div>
                 </div>
@@ -25,27 +25,33 @@ export default {
     data(){
         return {
             images: [
-                { file: "qubo.svg" },
-                { file: "ddd.png" },
+                //main ones height 120 (we and bf are too small 150)
+                { file: "ibm.png",height:"120" },
+                { file: "microsoft.png",height:"120" },
+                { file: "weamericas.jpg",height:"150" },
+                { file: "embassy.png",height:"120" },
+                { file: "blockforce.svg",height:"150" },
+                
+                //second tier 100
+                { file: "qubo.svg" ,height:"100"},
+                { file: "ambev_voa.png",height:"100" },
                 // { file: "cosmobots.png" },
-                { file: "unb.svg" },
-                { file: "embassy.png" },
-                { file: "blockforce.svg" },
-                { file: "ibm.png" },
-                { file: "microsoft.png" },
-                { file: "weamericas.jpg" },
-                { file: "ink.png" },
-                { file: "demarest.webp" },
-                { file: "brasscom.png" },
-                { file: "caravela.png" },
-                { file: "handtalk.png" },
-                { file: "AD&M.png" },
-                { file: "cnpq.jpg" },
-                { file: "logo_genesys.png" },
-                { file: "ambev_voa.png" },
-                { file: "TechSoup.jpg" },
-                { file: "mlabs.png" },
-                { file: "pactoglobal.jpg" },
+                { file: "unb.svg",height:"100" },
+                { file: "mlabs.png",height:"100" },
+
+                //third tier height 75(demarest too big 50)
+                { file: "ink.png",height:"75" },
+                { file: "demarest.webp",height:"50" },
+                { file: "brasscom.png",height:"75" },
+                { file: "caravela.png",height:"75" },
+                { file: "handtalk.png",height:"75" },
+                { file: "AD&M.png",height:"75" },
+                { file: "cnpq.jpg",height:"75" },
+                { file: "logo_genesys.png",height:"75" },
+                { file: "ddd.png" ,height:"75"},                
+                { file: "TechSoup.jpg",height:"75" },
+
+                { file: "pactoglobal.jpg" ,height:"75"},
 
                 // { file: "freefree.png" },
                 // { file: "seedin.png" },
