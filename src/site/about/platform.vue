@@ -36,6 +36,8 @@ export default {
 #platform{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #first-col{
