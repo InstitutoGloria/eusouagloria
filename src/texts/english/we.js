@@ -58,6 +58,9 @@ const we = {
             head:"Cristina Castro",
             department:"game"
         }
+    },
+    team:{
+        title:"Meet our team"
     }
 
 }

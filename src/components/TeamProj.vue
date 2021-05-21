@@ -1,6 +1,9 @@
 <template>
   <div class="team">
     <v-container fluid>
+       <v-container class="container text-center">
+            <p class="font-title">{{$t('we_page.projects.title') }}</p>
+      </v-container>
         <div id="carousel-home-resources" class="carousel-home-resources">
             <carousel-3d 
                 :perspective="0"

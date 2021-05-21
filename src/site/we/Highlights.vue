@@ -1,7 +1,9 @@
 <template>
     <div class="we">
         <v-container class="container text-center">
-            <p class="font-title">{{$t('home_page.we.title') }}</p>
+        <v-container class="cont-img">
+          <v-img alt="Gloria Montagem" contain src="../../assets/images/QuemsomosG.png"/>
+        </v-container>
             <md-card-media>
                     <div class="item">
                     <div class="player">
@@ -40,7 +42,8 @@ export default {
        return{
            playerOptions: {
           // videojs options
-          height: '420',
+          height: '700',
+          // width:'700',
           autoplay: true,
           muted: true,
           language: 'en',
@@ -115,11 +118,19 @@ export default {
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    display: flexbox;
+    display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
     
+}
+.cont-img{
+  width: 50%;
+  margin: 0;
+}
+.item{
+  padding-top: 16%;
 }
 .title{
     color: #000000;

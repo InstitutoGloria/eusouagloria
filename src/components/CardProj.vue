@@ -41,9 +41,12 @@ export default {
 <style scoped>
 .content-body {
   text-align: left;
+  width: max-content;
+  word-break: unset;
+
 }
 .teste {
-  size: 100px;
+  size: 400px;
 }
 .image_config {
   background-color: blue;

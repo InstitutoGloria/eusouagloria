@@ -40,7 +40,7 @@ const we = {
 
     },
     projects:{
-        title:"About us",
+        title:"Nossos Projetos",
         convida:{
             head:"Cristina Castro",
             department:"convida"
@@ -57,6 +57,9 @@ const we = {
             head:"Cristina Castro",
             department:"game"
         }
+    },
+    team:{
+        title:"Conheça nosso time"
     }
 
 }
