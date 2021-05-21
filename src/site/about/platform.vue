@@ -14,7 +14,13 @@
                 </div>
             </v-col>
             <v-col xl="6" lg="6" md="6" sm="6" xs="12" id="second-col">
-                
+                <div class="imagem">
+                    <v-img
+                        contain
+                        width="400"
+                        src="@/assets/images/circulo.png"
+                    />
+                </div>
             </v-col>
         </v-row>
     </div>
@@ -24,7 +30,7 @@
 export default {
     data(){
         return {
-            first: "1 - A glória nascei com o ideal de reduzir (e, por que não, combater) a opressão e violência física, psicológica e sexual contra mulheres",
+            first: "1 - A glória nasceu com o ideal de reduzir (e, por que não, combater) a opressão e violência física, psicológica e sexual contra mulheres",
             second: "2 - A partir da coleta de dados, geramos conteúdo educacional e criamos uma rede de apoio com as ferramentas necessárias para a melhoria social",
             third: "3 - Uma plataforma segura e de fácil acesso para mulheres em situação de vulnerabilidade e repressão"
         }
@@ -43,7 +49,12 @@ export default {
 #first-col{
     padding-left: 10%;
 }
-
+.imagem{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    text-align: center;
+}
 .main-text{
     font-size: 30px;
     text-align: left;

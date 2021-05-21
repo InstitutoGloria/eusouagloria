@@ -49,11 +49,7 @@ export default {
 #image{
     padding-top: 10%;
 }
-img{
-    width: 60%;
-    margin: auto;
-    display: block;
-}
+
 
 .text-goals{
     padding-right: 5%;
