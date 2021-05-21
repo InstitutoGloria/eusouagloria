@@ -4,17 +4,18 @@
             <span class="font-title">{{ $t('home_page.partners.title') }}</span>
         </div>
         <div id="scroll">
-            <div class="Wrapper text-center">
-                <div>
-                    <div>
-                        <img
-                            v-for="img in images" :key="img.file" 
+            <div class="text-center">
+                <v-row align="center" >
+                    <v-col align="center" class="p-10" v-for="img in images" :key="img.file">
+                        <v-img
                             :src="require(`@/assets/images/parceiros/${img.file}`)"
                             contain
-                            :height='img.height'
-                        />
-                    </div>
-                </div>
+                            :height="img.height"
+                            :width="img.width"
+                        >
+                        </v-img>
+                    </v-col>
+                </v-row>
             </div>
         </div>
     </div>
@@ -26,32 +27,32 @@ export default {
         return {
             images: [
                 //main ones height 120 (we and bf are too small 150)
-                { file: "ibm.png",height:"120" },
-                { file: "microsoft.png",height:"120" },
-                { file: "weamericas.jpg",height:"150" },
-                { file: "embassy.png",height:"120" },
-                { file: "blockforce.svg",height:"150" },
+                { file: "demarest.webp" ,height: "100px", width: "200px"},
+                { file: "unb.svg" ,height: "100px", width: "200px"},
+                { file: "microsoft.png" ,height: "100px", width: "200px"},
+                { file: "ibm.png" ,height: "100px", width: "150px"},
+                { file: "weamericas.png" ,height: "100px", width: "200px"},
+                { file: "embassy.png" ,height: "100px", width: "200px"},
+                { file: "blockforce.svg" ,height: "130px", width: "200px"},
                 
                 //second tier 100
-                { file: "qubo.svg" ,height:"100"},
-                { file: "ambev_voa.png",height:"100" },
-                // { file: "cosmobots.png" },
-                { file: "unb.svg",height:"100" },
-                { file: "mlabs.png",height:"100" },
+                { file: "qubo.svg" ,height: "100px", width: "200px"},
+                { file: "ambev_voa.png" ,height: "130px", width: "200px"},
+                // { file: "cosmobots.png" ,height: "100px", width: "200px"},
+                { file: "mlabs.png" ,height: "150px", width: "200px"},
 
                 //third tier height 75(demarest too big 50)
-                { file: "ink.png",height:"75" },
-                { file: "demarest.webp",height:"50" },
-                { file: "brasscom.png",height:"75" },
-                { file: "caravela.png",height:"75" },
-                { file: "handtalk.png",height:"75" },
-                { file: "AD&M.png",height:"75" },
-                { file: "cnpq.jpg",height:"75" },
-                { file: "logo_genesys.png",height:"75" },
-                { file: "ddd.png" ,height:"75"},                
-                { file: "TechSoup.jpg",height:"75" },
+                { file: "ink.png" ,height: "100px", width: "200px"},
+                { file: "brasscom.png" ,height: "100px", width: "200px"},
+                { file: "caravela.png" ,height: "100px", width: "200px"},
+                { file: "handtalk.png" ,height: "150px", width: "200px"},
+                { file: "AD&M.png" ,height: "130px", width: "200px"},
+                { file: "cnpq.jpg" ,height: "100px", width: "200px"},
+                { file: "logo_genesys.png" ,height: "130px", width: "200px"},
+                { file: "ddd.png" ,height: "100px", width: "200px"},                
+                { file: "TechSoup.jpg" ,height: "100px", width: "200px"},
 
-                { file: "pactoglobal.jpg" ,height:"75"},
+                { file: "pactoglobal.jpg" ,height: "100px", width: "200px"},
 
                 // { file: "freefree.png" },
                 // { file: "seedin.png" },
