@@ -7,7 +7,7 @@
         <v-divider/>
         <Projects/>
         <v-divider/>
-        <Research/>
+        <Survey/>
         <Data/>
     </div>
 </template>
@@ -17,7 +17,7 @@ import First from "./home/Home.vue";
 import We from "./home/We.vue";
 import Partners from "./home/Partners.vue";
 import Projects from "./home/Projects.vue";
-import Research from "./home/Research.vue";
+import Survey from "./home/survey.vue";
 import Data from "./home/Data.vue";
 
 export default {
@@ -27,7 +27,7 @@ export default {
         We,
         Partners,
         Projects,
-        Research,
+        Survey,
         Data
     }, 
     data(){

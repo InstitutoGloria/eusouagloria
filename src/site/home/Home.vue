@@ -9,13 +9,12 @@
             <v-img height="65vh" position=" center -7vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
         </div>
     </div>
-   
 </template>
 
 <script>
 export default {
     components:{
-      
+
     },
     data(){
         return {

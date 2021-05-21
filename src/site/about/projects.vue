@@ -1,8 +1,12 @@
 <template>
-    <div class="home">
-       <v-container class="container">
-            <p class="font-title text-center">{{$t('home_page.projects.title') }}</p>
-                <div class="row">
+    <div id="projects">
+        <div class="our-projects">
+            <v-btn large outlined class="button">
+                Conheça nossos projetos
+            </v-btn>
+        </div>
+        <div class="projects">
+            <div class="row">
                     <div class="col-md-12">
                     <div id="carousel-home-resources" class="carousel-home-resources">
                         <carousel-3d 
@@ -60,49 +64,37 @@
                     </div>
                     </div>
             </div>
-        </v-container>
+        </div>
     </div>
 </template>
 
 <script>
 import {Carousel3d, Slide} from 'vue-carousel-3d'
-
-
 export default {
     components: {
         Carousel3d,
         Slide
-    }, 
-      data(){
+    },
+    data(){
         return {
 
         }
-    }
+    } 
 }
 </script>
 
 <style scoped>
-.home{
-    background-color: #FFFFFF;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.52);
+#projects{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }
-.container{
-    display: flexbox;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: center;
-
+.button{
+    color: #853A94;
+    font-weight: 700;
     font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
-}
-.title{
-    color: #000000;
-    font-weight: 600;
-    padding-bottom: 10px;
-
+    background-color: white;
+    border-radius: 30px;
 }
 .carousel-3d-slide.current{
     background-color: transparent;
@@ -144,17 +136,4 @@ export default {
     bottom:5%;
     left:0;
 }
-.content{
-    font-weight: 500;
-    font-family: 'Montserrat',sans-serif;
-    
-    margin: auto;
-    height: fit-content;
-
-    text-align: justify;
-    text-justify: inter-cluster;
-}
-
-
-
 </style>

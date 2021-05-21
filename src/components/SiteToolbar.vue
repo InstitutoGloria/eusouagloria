@@ -35,6 +35,7 @@ export default {
         return {
             items: [
                 { id: 1, name: "home_page.toolbar.home", routeName:"/" },
+                { id: 1, name: "home_page.toolbar.about", routeName:"/about" },
                 { id: 2, name: "home_page.toolbar.news",routeName:"/news" },
                 { id: 3, name: "home_page.toolbar.about", routeName:"/we"},
             ],

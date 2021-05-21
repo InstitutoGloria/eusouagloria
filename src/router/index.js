@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import SiteLayout from '../views/Site.vue'
 import Home from "../site/Home.vue";
 import We from "../site/We.vue";
+import About from "../site/About.vue"
 
 Vue.use(VueRouter)
 
@@ -16,18 +18,19 @@ const routes = [
         name: "Home",
         component: Home
       },
+      {
+        path: 'we',
+        name: "We",
+        component: We
+      },
+      {
+        path: 'about',
+        name: "About",
+        component: About
+      },
     ]
   },
-  {
-    path:"/we",
-    component: SiteLayout,
-    children:[{
-      path:'',
-      name:"We",
-      component: We
-    },
-    ]
-  }
+  
 ]
 
 const router = new VueRouter({
