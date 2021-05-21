@@ -13,7 +13,8 @@ const home = {
         manifest: "Manifest",
         home: "Home",
         about: "About",
-        news: "News"
+        news: "News",
+        we: "Creators and Partners"
     },
     
     partners: {

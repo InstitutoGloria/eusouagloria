@@ -13,7 +13,8 @@ const home = {
         manifest: "Manifesto",
         home: "Início",
         about: "Sobre",
-        news: "Notícias"
+        news: "Notícias",
+        we: "Quem Faz Acontecer"
     },
 
     partners: {
