@@ -6,7 +6,7 @@ const home = {
     tagline:"Gloria was born to stop the violence against women and girls",
     
     home:{
-        button: "Donate here",
+        button: "DONATE NOW",
     },
     
     toolbar: {

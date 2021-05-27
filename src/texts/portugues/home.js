@@ -6,7 +6,7 @@ const home = {
     tagline:"A Gloria nasceu para acabar com a violência contra mulheres e meninas",
     
     home:{
-        button: "Doe aqui",
+        button: "DOE AGORA",
     },
    
     toolbar: {

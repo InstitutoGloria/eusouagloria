@@ -111,9 +111,9 @@ export default {
     background-color: white;
     border-radius: 35px;
     font-weight: 800;
-    font-size: 250%;
-    width: 25%;
-    height: 10%;
+    font-size: 200%;
+    width: 16%;
+    height: 9%;
 }
 
 .button-home-small{
@@ -123,8 +123,8 @@ export default {
     border-radius: 30px;
     font-weight: 800;
     font-size: 250%;
-    width: 25%;
-    height: 10%;
+    width: 30%;
+    height: 9%;
 }
 
 button.button-home:hover, button.button-home-small:hover, p.button-home-text:hover{
