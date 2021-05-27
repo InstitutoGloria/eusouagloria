@@ -3,7 +3,9 @@
         <div :class="{'hero-img-small': $vuetify.breakpoint. smAndDown, 'hero-img': $vuetify.breakpoint. mdAndUp}">
             <p class="hero-title">{{ $t("home_page.title") }}</p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("home_page.tagline") }}</p>
-            <v-btn large :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}"> {{$t('home_page.home.button') }}</v-btn>
+            <button width="20%" height="12%" :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}">
+                {{$t('home_page.home.button') }}
+            </button>
         </div>
         <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
             <v-img height="65vh" position=" center -7vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
@@ -93,22 +95,46 @@ export default {
     color: #FFFFFF;
 }
 
-.button-home{
+.button-home-text{
     color: #853A94!important;
-    font-weight: 700;
+    font-weight: 800;
     font-family: 'Montserrat',sans-serif;
     background-color: white;
     border-radius: 30px;
+    font-size: 250%;
+    margin-top: 5%;
+}
+
+.button-home{
+    color: #853A94!important;
+    font-family: 'Montserrat',sans-serif;
+    background-color: white;
+    border-radius: 35px;
+    font-weight: 800;
+    font-size: 250%;
+    width: 25%;
+    height: 10%;
 }
 
 .button-home-small{
     color: #853A94!important;
-    font-weight: 700;
     font-family: 'Montserrat',sans-serif;
     background-color: white;
     border-radius: 30px;
-    font-size: 10px;
-    margin-bottom: 100px;
+    font-weight: 800;
+    font-size: 250%;
+    width: 25%;
+    height: 10%;
+}
+
+button.button-home:hover, button.button-home-small:hover, p.button-home-text:hover{
+    background-color: rgba(255, 255, 255, 0.900);
+    transition-delay: 0.01s;
+}
+
+button.button-home:active, button.button-home-small:active, p.button-home-text:active{
+    background-color: rgba(255, 255, 255, 0.700);
+    transition-delay: 0.01s;
 }
 
 </style>
