@@ -13,13 +13,9 @@
                     <span class="item"> {{ third }} </span>
                 </div>
             </v-col>
-            <v-col xl="6" lg="6" md="6" sm="6" xs="12" id="second-col">
-                <div class="imagem">
-                    <v-img
-                        contain
-                        width="400"
-                        src="@/assets/images/circulo.png"
-                    />
+            <v-col xl="6" lg="6" md="6" sm="6" xs="12">
+                <div class="img-container">
+                    <img contain width="400" src="@/assets/images/circulo.png"/>
                 </div>
             </v-col>
         </v-row>
@@ -49,12 +45,12 @@ export default {
 #first-col{
     padding-left: 10%;
 }
-.imagem{
-    padding-left: 10%;
-    padding-right: 10%;
-    align-content: center;
+
+.img-container{
     text-align: center;
 }
+
+
 .main-text{
     font-size: 30px;
     text-align: left;
@@ -68,11 +64,6 @@ export default {
     background-color: #853A94;
 }
 
-/* span::before{
-    content: attr(data-text);
-    background: black;
-    padding: 1px 8px;
-} */
 
 span span::before{
     content: "\A";
