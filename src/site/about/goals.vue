@@ -3,12 +3,8 @@
         <v-container>
             <v-row>
                 <v-col xl="6" lg="6" md="6" sm="6" xs="12" class="first-col">
-                    <div id="image">
-                        <v-img
-                            contain
-                            width="400"
-                            src="@/assets/images/meta-20milhoes.png"
-                        />
+                    <div class="img-container">
+                        <img contain width="400" src="@/assets/images/meta-20milhoes.png"/>
                     </div>
                 </v-col>
                 <v-col xl="6" lg="6" md="6" sm="6" xs="12">
@@ -42,14 +38,19 @@ export default {
     padding-bottom: 70px;
     font-family: 'Poppins', sans-serif;
 }
+
+.img-container{
+    text-align: center;
+}
+
+img{
+    text-align: center;
+}
+
 .title-goals{
     font-size: 26px;
     padding-right: 30%;
 }
-#image{
-    padding-top: 10%;
-}
-
 
 .text-goals{
     padding-right: 5%;

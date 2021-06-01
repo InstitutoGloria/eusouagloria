@@ -1,11 +1,11 @@
 <template>
     <div id="manifest">
-        <v-row>
+        <v-row class="">
             <v-col xl="6" lg="6" md="6" sm="6" xs="6">
                 <div id="video">
                     <iframe 
                         class="video-container"
-                        width="300"
+                        width="350"
                         src="https://www.youtube.com/embed/zcxTR6wOFoE" 
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -51,7 +51,7 @@ export default {
 .video-container{
     max-width: 100%;
     height: auto;
-    padding: 7px;
+    padding: 5px;
     background-color: white;
 }
 
