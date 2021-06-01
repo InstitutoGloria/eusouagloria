@@ -27,12 +27,12 @@ export default {
         return {
             images: [
                 //main ones height 120 (we and bf are too small 150)
+                { file: "embassy.png" ,height: "100px", width: "200px"},
                 { file: "demarest.webp" ,height: "100px", width: "200px"},
                 { file: "unb.svg" ,height: "100px", width: "200px"},
                 { file: "microsoft.png" ,height: "100px", width: "200px"},
                 { file: "ibm.png" ,height: "100px", width: "150px"},
                 { file: "weamericas.png" ,height: "100px", width: "200px"},
-                { file: "embassy.png" ,height: "100px", width: "200px"},
                 { file: "blockforce.svg" ,height: "130px", width: "200px"},
                 
                 //second tier 100

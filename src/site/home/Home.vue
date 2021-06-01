@@ -8,7 +8,8 @@
             </button>
         </div>
         <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
-            <v-img height="65vh" position=" center -7vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
+            <!-- <v-img height="75%" position=" center -10vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/> -->
+            <img height="75%" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
         </div>
     </div>
 </template>
@@ -36,14 +37,14 @@ export default {
 
 .gloriaimg{
     position: relative;
-    /* top: -35vh; */
-     height: 100vh;
+    height: 90vh;
+    margin-top: -5%;
 }
 
 .gloriaimg-small{
     position: relative;
-    /* top: -10vh; */
-    height: 100vh;
+    height: 70vh;
+    margin-top: -5%;
 }
 
 .hero-img{
