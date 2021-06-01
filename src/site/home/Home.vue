@@ -39,12 +39,15 @@ export default {
     position: relative;
     height: 90vh;
     margin-top: -5%;
+    text-align: center;
 }
 
 .gloriaimg-small{
     position: relative;
     height: 70vh;
     margin-top: -5%;
+    text-align: center;
+
 }
 
 .hero-img{
