@@ -1,5 +1,6 @@
 <template>
     <div id="about">
+        <first/>
         <projects/>
         <v-divider class="divider"/>
         <platform/>
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import first from "./home/Home.vue";
 import projects from "./about/projects.vue"
 import platform from "./about/platform.vue"
 import manifest from "./about/manifest.vue"
@@ -16,6 +18,7 @@ import goals from "./about/goals.vue"
 
 export default {
     components: {
+        first,
         projects,
         platform,
         manifest,
