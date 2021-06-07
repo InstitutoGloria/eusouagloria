@@ -14,7 +14,8 @@ const home = {
         home: "Início",
         about: "Sobre",
         news: "Notícias",
-        we: "Quem Faz Acontecer"
+        we: "Quem Faz Acontecer",
+        projects: "Projetos"
     },
 
     partners: {
