@@ -3,13 +3,22 @@
         <div :class="{'hero-img-small': $vuetify.breakpoint. smAndDown, 'hero-img': $vuetify.breakpoint. mdAndUp}">
             <p class="hero-title">{{ $t("home_page.title") }}</p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("home_page.tagline") }}</p>
-            <button width="20%" height="12%" :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home': $vuetify.breakpoint. mdAndUp}">
+            <button width="20%" height="12%" :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home-md': $vuetify.breakpoint. md, 'button-home': $vuetify.breakpoint. lgAndUp}">
                 {{$t('home_page.home.button') }}
             </button>
         </div>
-        <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg': $vuetify.breakpoint. mdAndUp}">
-            <v-img height="65vh" position=" center -7vh" contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
+
+        <div >
+            <v-img  
+            :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg-md': $vuetify.breakpoint. md, 'gloriaimg': $vuetify.breakpoint. lgAndUp}"
+            src="../../assets/images/home/gloria-imagem-removebg-preview.png"
+            contain
+            />   
         </div>
+
+        <!-- <div :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg-md': $vuetify.breakpoint. md, 'gloriaimg': $vuetify.breakpoint. lgAndUp}">
+            <img  contain src="../../assets/images/home/gloria-imagem-removebg-preview.png"/>
+        </div> -->
     </div>
 </template>
 
@@ -30,20 +39,32 @@ export default {
     height: 110vh;
     margin-bottom: 10%;
 }
+
+
 .home-home-small{
     height: 80vh;
 }
 
 .gloriaimg{
+    align-self: center;
     position: relative;
-    /* top: -35vh; */
-     height: 100vh;
+    top: -20vh;
+    height: 60vh;
 }
 
+.gloriaimg-md{
+    align-self: center;
+    position: relative;
+    top: -50vh; 
+    height: 75vh;
+}
+
+
 .gloriaimg-small{
+    align-self: center;
     position: relative;
     /* top: -10vh; */
-    height: 100vh;
+    height: 50vh;
 }
 
 .hero-img{
@@ -53,7 +74,6 @@ export default {
     background-size: contain;
     text-align: center;
 }
-
 .hero-img-small{
     background-image: url(../../assets/images/home/hero.png);
     height: 40vh;
@@ -116,6 +136,17 @@ export default {
     height: 9%;
 }
 
+.button-home-md{
+    color: #853A94!important;
+    font-family: 'Montserrat',sans-serif;
+    background-color: white;
+    border-radius: 35px;
+    font-weight: 800;
+    font-size: 130%;
+    width: 16%;
+    height: 9%;
+}
+
 .button-home-small{
     color: #853A94!important;
     font-family: 'Montserrat',sans-serif;
@@ -123,7 +154,7 @@ export default {
     border-radius: 30px;
     font-weight: 800;
     font-size: 250%;
-    width: 30%;
+    width: 20%;
     height: 9%;
 }
 
