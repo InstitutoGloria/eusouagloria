@@ -2,8 +2,8 @@
     <div id="HomePageData">
         <div>
             <v-row align="center" class="h_grid" v-for="(item,index) in content" :key="index">
-                <v-col align="conter" xl="4" md="4" sm="12">
-                    <v-img style="width:50%" class="image" :src="require(`@/assets/${item.img}`)"> </v-img>
+                <v-col align="center" xl="4" md="4" sm="12">
+                    <v-img :class="{'data_image_small': $vuetify.breakpoint. smAndDown, 'data_image': $vuetify.breakpoint. mdAndUp}" class="image" :src="require(`@/assets/${item.img}`)"> </v-img>
                 </v-col>
                 <v-col xl="3" md="3" sm="12">
                     <span class="middle-text">
@@ -12,8 +12,11 @@
                     <v-btn outlined rounded class="button">{{$t(item.button)}}</v-btn>
                 </v-col>
                 <v-col align="center" xl="1" md="1" sm="12">
-                    <v-img v-if="!is_mobile" class="arrow" style="width:50%" :src="require(`@/assets/${item.arrow}`)"></v-img>
-                    <v-img v-if="is_mobile" class="arrow_small" style="width:10%" :src="require(`@/assets/${item.arrow}`)"></v-img>
+                    <!-- :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}" -->
+                    <v-img :class="{'arrow_small': $vuetify.breakpoint. smAndDown, 'arrow': $vuetify.breakpoint. mdAndUp}"  :src="require(`@/assets/${item.arrow}`)"></v-img>
+
+                    <!-- <v-img v-if="!is_mobile" class="arrow" style="width:50%" :src="require(`@/assets/${item.arrow}`)"></v-img>
+                    <v-img v-if="is_mobile" class="arrow_small" style="width:10%" :src="require(`@/assets/${item.arrow}`)"></v-img> -->
                 </v-col>
                 <v-col align="center" xl="4" md="4" sm="12">
                     <span class="counter">
@@ -120,9 +123,25 @@ export default {
 <style scoped>
 /* # paara id . para class */
 
+.data_image{
+    width: 55%;
+}
+
+.data_image_small{
+    width: 20%;
+    right: 13%;
+}
+
+.arrow{
+    width: 50%;
+}
+
 .arrow_small{
     transform: rotate(90deg) scale(0.8);
+    /* style="width:50%"  */
+    width: 10%;
 }
+
 #HomePageData{
     padding-left: 10%;
     padding-right: 15%;
