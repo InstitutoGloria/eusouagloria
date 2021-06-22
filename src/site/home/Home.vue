@@ -3,7 +3,7 @@
         <div :class="{'hero-img-small': $vuetify.breakpoint. smAndDown, 'hero-img': $vuetify.breakpoint. mdAndUp}">
             <p class="hero-title">{{ $t("home_page.title") }}</p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("home_page.tagline") }}</p>
-            <button width="20%" height="12%" :class="{'button-home-small': $vuetify.breakpoint. smAndDown, 'button-home-md': $vuetify.breakpoint. md, 'button-home': $vuetify.breakpoint. lgAndUp}">
+            <button width="20%" height="12%" :class="{'donation-button-home-small': $vuetify.breakpoint. smAndDown, 'button-home-md': $vuetify.breakpoint. md, 'button-home': $vuetify.breakpoint. lgAndUp}">
                 {{$t('home_page.home.button') }}
             </button>
         </div>
@@ -145,23 +145,23 @@ export default {
     height: 9%;
 }
 
-.button-home-small{
+.donation-button-home-small{
     color: #853A94!important;
     font-family: 'Montserrat',sans-serif;
     background-color: white;
     border-radius: 30px;
-    font-weight: 800;
-    font-size: 250%;
-    width: 20%;
-    height: 9%;
+    font-weight: 600;
+    font-size: 20px;
+    width: 50%;
+    height: 11%;
 }
 
-button.button-home:hover, button.button-home-small:hover, p.button-home-text:hover{
+button.button-home:hover, button.donation-button-home-small:hover, p.button-home-text:hover{
     background-color: rgba(255, 255, 255, 0.900);
     transition-delay: 0.01s;
 }
 
-button.button-home:active, button.button-home-small:active, p.button-home-text:active{
+button.button-home:active, button.donation-button-home-small:active, p.button-home-text:active{
     background-color: rgba(255, 255, 255, 0.700);
     transition-delay: 0.01s;
 }
