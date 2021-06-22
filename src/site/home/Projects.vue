@@ -13,7 +13,6 @@
                                     :controls-visible="true"
                                     :space="0"
                                     :inverseScaling="700"
-                                    :orientation="rtl"
                                     :display=2
                                     :clickable="true">
 

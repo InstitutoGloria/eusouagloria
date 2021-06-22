@@ -2,7 +2,7 @@
     <div class="home">
         <div class="container">
             <v-row>
-                <v-col cols="8">
+                <v-col cols="12">
                     <span class="title text-h4 mb-3">
                         {{ $t('home_page.research.title') }}
                     </span><br>
@@ -10,17 +10,19 @@
                         {{ $t('home_page.research.subtitle') }}
                     </span>
                 </v-col>
-                <v-col cols="4" class="pt-8">
+
+                <v-col cols="12" class="pt-8">
                     <v-btn rounded outlined class="button" @click="form=!form" v-if="!form && !block"><b> {{ $t('home_page.research.button') }} </b></v-btn>
                     <span v-if="block">
                         <p class="poppins text-h5 purple--text"> {{ $t('home_page.research.thankyou') }} </p>
                     </span>
                         <v-btn rounded outlined class="button-clear" @click="clear" v-if="form"><b> X </b></v-btn>
                 </v-col>
+
             </v-row>
             <v-expand-transition>
                 <v-row v-if="form" class="form">
-                    <v-col xs="12" sm="6" md="6" lg="6" xl="6">
+                    <v-col xs="12" sm="6" md="6" lg="6" xl="6" cols="12">
                         <v-form>
                             <v-form>
                                 <v-text-field
@@ -83,7 +85,7 @@
                             </v-form>
                         </v-form>
                     </v-col>
-                    <v-col xs="12" sm="6" md="6" lg="6" xl="6">
+                    <v-col xs="12" sm="6" md="6" lg="6" xl="6" cols="12">
                         <v-form v-model="valid">
                             <div class="to_center">
                                 <div class="flex-center">
@@ -154,7 +156,7 @@
                             </div>
                         </v-form>
                     </v-col>
-                    <v-col cols="12" class="content-send-form">
+                    <v-col xs="12" sm="6" md="6" lg="6" xl="6" cols="12" class="content-send-form">
                         <div>
                             <v-btn small rounded @click="terms = !terms">Ver Termos de Uso de dados</v-btn>
                             <v-checkbox v-model="checkbox" label="Li e concordo com os termos apresentados">
