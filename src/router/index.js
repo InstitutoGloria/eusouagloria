@@ -5,6 +5,7 @@ import SiteLayout from '../views/Site.vue'
 import Home from "../site/Home.vue";
 import We from "../site/We.vue";
 import About from "../site/About.vue"
+import Projects from "../site/Projects.vue"
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
         path: 'about',
         name: "About",
         component: About
+      },
+      {
+        path: 'projects',
+        name: "Projects",
+        component: Projects
       },
     ]
   },
