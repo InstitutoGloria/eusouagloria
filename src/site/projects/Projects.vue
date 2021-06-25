@@ -1,0 +1,84 @@
+<template>
+    <div class="projects">
+        <v-expansion-panels flat>
+            <v-expansion-panel v-for="(item,i) in projects" :key="i">
+                <v-expansion-panel-header>
+                    <span class="list-title">
+                        {{ item.title }}
+                    </span>
+                </v-expansion-panel-header>
+
+                <v-expansion-panel-content>
+                        <div class="box-images">
+                            <div v-for="img in item.images" :key="img" class="image">
+                                <v-img max-width="150" src="https://picsum.photos/id/11/500/300"/>
+                            </div>
+                        </div>
+                    <span class="list-description font-weight-light" v-html="item.description"/>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-expansion-panels>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "projects",
+    data(){
+        return {
+            projects: [
+                { title: "Ações Projeto STEAM Power for Girls", images: [ 'logo.png' ], description: "<b>STEAM Power for Girls</b> é uma iniciativa da Embaixada dos EUA no Brasil em parceria com o Instituto Gloria para formar meninas de escolas públicas do ensino secundário no Brasil em futuras cientistas.Esta iniciativa é focada na formação em disciplinas S.T.E.A.M. e trata-se de uma ação direta para o empoderamento de <b>futuras líderes</b> pormeio de educação e desenvolvimento de competências para otrabalho do século XXI." },
+                { title: "Rede Convida - Plataforma de Tele Atendimento (2020 até o presente)", images: [ 'logo.png', 'logo2.png' ], description: "O Instituto Gloria em parceria com o projeto Ciranda Sertaneja e o projeto The medical Explorer desenvolveu uma <b>plataforma de teleatendimento de saúde</b> para pessoas em situação de extrema vulnerabilidade (socioeducativo, casas de passagem, casas abrigo). O início do atendimento à população foi em junho/2020 e dados são minerandos, de maneira anônima, visando compreender tais contextos." },
+                { title: "Jogo para novos talentos - 'O Mundo de Gloria'", images: [ ], description: "Após aprovação do Edital Universal do CNPq (2020/2021), o Instituto Gloria criou um jogo para aprendizado de <b>empreendedorismo, inovação e responsabilidade social</b> para escolas públicas (2 grau) no Brasil. Além do desenvolvimento de um plano de negócio inovador, os jogadores aprendem sobre desenvolvimento sustentável e inclusão digital para projetos sociais no mundo. Todos os membros da equipe de desenvolvimento do jogo são alunos e professores voluntários de Universidades brasileiras." },
+                { title: "Ações Sociais", images: [ ], description: "• Em 2019 atendemos 1.150 crianças, jovens e adultos (450 crianças carentes, 500 mulheres da penitenciária Colméia, 100 jovens do Programa ViraVida); • Em parceria com a empresa Salon-Line distribuímos 100 Kits de cuidado com os cabelos para mulheres negras; fizemos em conjunto com a distribuição dos Kits cursos de automulheres; • Em 2020 - Aniversário comunitário de 97 jovens do Programa ViraVida com entrega de presentes e lanches; • Distribuição de 177 cestas básicas para jovens vulneráveis do programa ViraVida (97 no mês de abril e 80 mês de junho); • 5 enxovais para grávidas adolescentes em condição de total vulnerabilidade; • Distribuímos 300 máscaras para o sistema socioeducativo de Brasília; • Com ajuda da ONG Miséria, fizemos testes rápidos para Covid 19 no sistema socioeducativo masculino em Brasília; • Realização de curso sobre saúde sexual para 97 internos do Sócio Educativo do DF; • Entrega de alimentos e cobertores para 150 moradores de rua de Brasília; • Campanha do mês da mulher 2021: Entrega de Kits de autocuidado para mulheres em tratamento de drogadição. Parceria do Instituto Gloria e a Empresa Junior AD&M da UnB." },
+                { title: "Parecria no levantamento de dados para o Relatório Mundial ONU/Mulheres (2020)", images: [ ], description: "Com pesquisadoras na área de direito e medicina, o Instituto Gloria participou do levantamento de dados no Brasil sobre a violência contra mulheres e meninas em momento de pandemia COVID-19 para a geração de relatório mundial da ONU/Mulheres." },
+                { title: "Estruturação da Biblioteca Digital da Gloria (BDG) - 2020", images: [ ], description: "O Projeto “Biblioteca Digital da Gloria: informação para todos”  promove a defesa dos direitos da mulher, em prol da prevenção da violência feminina, autonomia e Independência de mulheres por meio do acesso a informação digital. Neste sentido, acredita-se que o desenvolvimento destas ações permitem a busca pela igualdade de gênero e a universalização do acesso à informação." },
+                { title: "Vídeos do projeto Gloria", images: [ ], description: "Criação de vídeos para institucionalizar ações do Instituto Gloria atuando de maneira educativa: Português/Inglês Espanhol 1 Espanhol 2" },
+                { title: "Educação Financeira para Meninas de Escolas Públicas", images: [ ], description: "Desenvolvimento de metodologia de educação financeira para Meninas de Escolas Públicas. Este projeto está em fase de captação de recurso. O foco de atuação é formar jovens de escolas públicas na área financeira. *Há previsão de expandir a atuação para mulheres semialfabetizadas de baixa renda." },
+                { title: "Signatário do Pacto Global - ONU", images: [ ], description: "Em 2020, o Instituto Gloria foi selecionado como Signatário do Pacto <b> Global - ONU. </b>" },
+                { title: "TODAS ELAS - Fundação Assis Chateaubriand", images: [ ], description: "Fomos parceiros do projeto TODAS ELAS – Fundação Assis Chateaubriand para acelerar negócios de 650 mulheres de baixa renda (até R$ 500,00/mês) – 2020." },
+                { title: "Programa VOA - Ambev", images: [ ], description: "Em 2021, fomos aprovados no Programa VOA – Ambev. Programa de Mentoria e suporte para desenvolvimento de inovações sociais." },
+                { title: "Projeto de empreendedorismo para mulheres que sofreram acidente escalpeladas. UNOPs - MPT", images: [ ], description: "2021 – Iniciamos uma parceria com a UNOPs/MPT para fazer pesquisa com mulheres vítimas de acidente de escalpelamento no norte do Brasil. O projeto visa atender, inicialmente, 250 mulheres para formação empreendedora e mapeamento socioeconômico destas." },
+                { title: "Programa de microcrédito com mulheres de Recife", images: [ ], description: "2021 – Projeto para pesquisa com a prefeitura de Recife para a atuação de um Programa de microcrédito com mulheres em condição de vulnerabilidade." },
+                { title: "Embaixadora Estudantil Gloria", images: [ ], description: "2021- Formação de meninas do 2 grau de escolas públicas para atuarem com projetos comunitários visando o combate à violência de gênero através de conteúdos educacionais." },
+                { title: "Embaixadoras da Rede WEAmericas", images: [ ], description: "2021 - Firmamos um acordo com Embaixadoras da Rede WEAmericas (Américas e Caribe) para atuação de projetos desenvolvidos pelo Instituto Gloria nestas regiões." },
+                { title: "Mapa de Segurança Gloria - Projeto em busca de financiamento", images: [ ], description: "Mapa auto declarável, seguro e anônimo para análise do padrão de comportamento de vítimas de violência de gênero. Será possível coletar informações de 'vítimas ou possíveis vítimas' e minerar dados para construção de narrativas sobre o fenômento." },
+                { title: "Grupo de Trabalho - Direito da Mulher", images: [ ], description: "2020 – Iniciamos uma parceria entre pesquisadoras na área de direito formando um grupo de trabalho para a discussão sobre gênero e direito no Brasil. Este GT visa identificar, avaliar e discutir a relação entre violência, inserção social e leis focadas na temática de gênero." },
+                { title: "Grupo de Pesquisa - CULTI/CNPq", images: [ ], description: "O Grupo de Pesquisa CULTI desenvolve estudos e pesquisas nos temas: cultura, práticas organizacionais, inovação e internacionalização, visando identificar a relação com inovações sociais. O objetivo do grupo é promover a integração e cooperação de pesquisadores e estudantes para desenvolvimento e disseminação de conhecimento. O grupo de pesquisa já apoiou desenvolvimento teses de doutorado, dissertações de mestrado, trabalhos de Iniciação Científica, TCC, estágios de pós-doutorado e projetos de extensão. Conta-se como parceiros a Universidade de Brasília, IESB, Cornell University, Université Aix Marseille III, Université Lili I, Universidade de Lisboa." },
+                { title: "eBook UMDI", images: [ ], description: "" },
+
+            ]
+        }
+    }
+}
+</script>
+
+<style>
+.projects{
+    margin-top: 4%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.list-title{
+    color: #843A93;
+}
+.list-description{
+    color: #737373;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 6%;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.box-images::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.image{
+    float: left;
+    width: 25.00%;
+    padding: 5px;
+}
+
+</style>

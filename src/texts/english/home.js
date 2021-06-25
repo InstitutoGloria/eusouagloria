@@ -14,7 +14,8 @@ const home = {
         home: "Home",
         about: "About",
         news: "News",
-        we: "Creators and Partners"
+        we: "Creators and Partners",
+        projects: "Projects"
     },
     
     partners: {
