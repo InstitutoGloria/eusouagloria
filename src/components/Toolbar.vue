@@ -1,7 +1,7 @@
 <template>
-  <div class="toolbar">
-    <mobile :items="items" :languages="languages" :currentLang="currentLang" v-on:changeLocalem="changeLanguage" v-if="isMobile"></mobile>
-    <web    :items="items" :languages="languages" :currentLang="currentLang" v-on:changeLocalew="changeLanguage" v-if="!isMobile"></web>
+  <div class="toolbar" :key="key">
+    <mobile :items="items" :languages="languages" :currentLang="currentLang" v-on:changeLocale="changeLanguage" v-if="isMobile"></mobile>
+    <web    :items="items" :languages="languages" :currentLang="currentLang" v-on:changeLocale="changeLanguage" v-if="!isMobile"></web>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
   },
     data() {
         return {
+            key: 0,
             isMobile: false,
             show: false,
             items: [
@@ -52,9 +53,10 @@ export default {
             this.$router.push("/");
         },
         changeLanguage(locale) {
-            print(locale)
+            // print(locale)
             i18n.locale = locale;
             this.currentLang = i18n.locale;
+            // this.key++
         },
     }
 };

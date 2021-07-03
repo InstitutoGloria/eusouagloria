@@ -20,7 +20,7 @@
                     </template>
                     <v-list>
                         <v-list-item v-for="(item, index) in languages" :key="index">
-                            <v-btn text @click="changeLocalem(item.id)">
+                            <v-btn text @click="changeLocale(item.id)">
                                 {{item.name}}
                             </v-btn>
                         </v-list-item>
@@ -57,9 +57,8 @@ export default {
         }
     },
     methods: {
-        changeLocalem(locale) {
-        i18n.locale = locale;
-        this.currentLang = i18n.locale;
+        changeLocale(locale) {
+            this.$emit('changeLocale', locale)
         },
         goTo() {
             this.$router.push("/");

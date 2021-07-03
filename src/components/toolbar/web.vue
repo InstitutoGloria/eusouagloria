@@ -14,7 +14,7 @@
             </template>
             <v-list>
                 <v-list-item v-for="(item, index) in languages" :key="index">
-                    <v-btn text @click="changeLocalew(item.id)">
+                    <v-btn text @click="changeLocale(item.id)">
                         {{item.name}}
                     </v-btn>
                 </v-list-item>
@@ -34,8 +34,8 @@ export default {
         }
     },
     methods: {
-        changeLocalew(item){
-            this.$emit('changeLanguage', item)
+        changeLocale(item){
+            this.$emit('changeLocale', item)
         }
 
     }
