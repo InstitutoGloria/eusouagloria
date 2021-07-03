@@ -1,6 +1,6 @@
 <template>
     <div class="site">
-        <site-toolbar/>
+        <toolbar/>
             <router-view/>
         <site-footer/>
     </div>
@@ -8,12 +8,12 @@
 
 <script>
 // import Site from "./views/Site.vue";
-import SiteToolbar from "../components/SiteToolbar.vue";
+import Toolbar from "../components/Toolbar.vue";
 import SiteFooter from "../components/SiteFooter.vue";
 
 export default {
     name: 'Site',
-    components: { SiteToolbar, SiteFooter },
+    components: { Toolbar, SiteFooter },
     data(){
         return {
 

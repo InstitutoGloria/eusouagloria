@@ -23,7 +23,7 @@ const home = {
     },
     research: {
         title: "Answer our survey!",
-        subtitle: "Don't worry! Our survey is completely anonymous",
+        subtitle: "Don't worry! Our survey is completely <b>anonymous</b>",
         button: "Click Here",
         button_send: "Send!",
         thankyou: "Thank You!",
