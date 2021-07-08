@@ -8,14 +8,6 @@
             </button>
         </div>
 
-        <div>
-            <v-img  
-            :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg-md': $vuetify.breakpoint. md, 'gloriaimg': $vuetify.breakpoint. lgAndUp}"
-            src="../../assets/images/home/gloria-imagem-removebg-preview.png"
-            contain
-            />   
-        </div>
-
     </div>
 </template>
 
@@ -33,7 +25,7 @@ export default {
 </script>
 <style scoped>
 .home-home{
-    height: 110vh;
+    height: 90vh;
     margin-bottom: 10%;
 }
 
@@ -41,34 +33,14 @@ export default {
     height: 80vh;
 }
 
-.gloriaimg{
-    align-self: center;
-    position: relative;
-    top: -40vh;
-    height: 80vh;
-}
-
-.gloriaimg-md{
-    align-self: center;
-    position: relative;
-    top: -50vh; 
-    height: 75vh;
-}
-
-.gloriaimg-small{
-    align-self: center;
-    position: relative;
-    top: -10vh;
-    height: 50vh;
-}
-
 .hero-img{
     background-image: url(../../assets/images/home/hero.png);
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     background-size: contain;
     text-align: center;
 }
+
 .hero-img-small{
     background-image: url(../../assets/images/home/hero.png);
     height: 40vh;

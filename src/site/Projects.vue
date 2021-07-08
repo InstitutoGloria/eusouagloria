@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import First from "./home/Home.vue";
+import First from "./projects/Top.vue";
 import description from "./projects/Description.vue"
 import projects from "./projects/Projects.vue"
 import ebook from "./projects/Ebook.vue"
