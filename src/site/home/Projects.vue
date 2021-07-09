@@ -4,7 +4,7 @@
             <p class="font-title text-center">{{$t('home_page.projects.title') }}</p>
                 <div class="row">
                     <div class="col-md-12">
-                    <div id="carousel-home-resources" class="carousel-home-resources" >
+                    <div v-if="!isMobile" id="carousel-home-resources" class="carousel-home-resources" >
                         <carousel-3d 
                                     :perspective="0"
                                     :border="0"
@@ -16,48 +16,39 @@
                                     :display=2
                                     :clickable="true">
 
-                        <!-- <slide v-for="(item,index) in slides" :key="index">
-                          <v-row style="align-content:end;">
-                            <v-col style="align-self:end" cols="3">
-                                <figcaption class="theme">{{$t(item.theme) }}</figcaption>
-                                <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
-                                <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
-                            </v-col>
-                             <v-col cols="12">
-                                <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
-                            </v-col>
-                          </v-row>
-                        </slide> -->
-                        <slide v-for="(item,index) in slides" :key="index">
-                          <v-row style="align-content:end;">
-                            <v-col style="align-self:end" cols="3">
-                                <figcaption class="theme">{{$t(item.theme) }}</figcaption>
-                                <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
-                                <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
-                            </v-col>
-                             <v-col cols="12">
-                                <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
-                            </v-col>
-                          </v-row>
-                        </slide>
-
+                            <slide v-for="(item,index) in slides" :index="index" :key="index">
+                                <v-row style="align-content:end;">
+                                    <v-col style="align-self:end" cols="3">
+                                        <figcaption class="theme">{{$t(item.theme) }}</figcaption>
+                                        <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
+                                        <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
+                                    </v-col>
+                                    <v-col cols="12">
+                                        <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
+                                    </v-col>
+                                </v-row>
+                            </slide>
                         </carousel-3d>
                     </div>
-                    
-                    <!-- <div v-else class="carousel-home-resources-mobile" >
+
+                    <div v-else class="carousel-home-resources-mobile" >
                         <carousel-3d 
+                                    :controls-prev-html="'&#10092; '"
+                                    :controls-next-html="'&#10093;'" 
+                                    :controls-width="30"
+                                    :controls-height="60"
                                     :controls-visible="true"
                                     :clickable="true">
 
-                        <slide :index="0">
+                        <slide v-for="(item,index) in slides" :index="index" :key="index">
                             <figure>
-                                <img style="width:100%" src="https://loremflickr.com/585/370/paris/?random=1" />
-                                <figcaption style="align-self:center" >{{$t('home_page.projects.convida.title') }}</figcaption>
+                                <img :src="item.img" />
+                                <figcaption class="mobile-title">{{$t(item.title) }}</figcaption>
                             </figure>
                         </slide>
 
                         </carousel-3d>
-                    </div> -->
+                    </div>
 
                     </div>
             </div>
@@ -75,35 +66,36 @@ export default {
     }, 
       data(){
         return {
+            isMobile: false,
             slides:[
                 {
                     theme: 'home_page.projects.convida.theme',
-                    subtitle: 'home_page.projects.convida.title',
+                    title: 'home_page.projects.convida.title',
                     button: 'home_page.projects.button',
                     img: 'https://loremflickr.com/585/370/paris/?random=1',
                 },
                 {
                     theme: 'home_page.projects.game.theme',
-                    subtitle: 'home_page.projects.game.title',
+                    title: 'home_page.projects.game.title',
                     button: 'home_page.projects.button',
                     img: 'https://loremflickr.com/585/370/paris/?random=2',
                 },
                 {
                     theme: 'home_page.projects.steam.theme',
-                    subtitle: 'home_page.projects.steam.title',
+                    title: 'home_page.projects.steam.title',
                     button: 'home_page.projects.button',
                     img: 'https://loremflickr.com/585/370/paris/?random=3',
                 },
             ]
         }
     },
+    mounted() {
+        this.onResize();
+        window.addEventListener("resize", this.onResize, { passive: true });
+    },
     methods:{
-        isMobile() {
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                return true
-            } else {
-                return false
-            }
+        onResize() {
+            this.isMobile = window.innerWidth < 930;
         },
     }
 }
@@ -132,16 +124,19 @@ export default {
     padding-bottom: 10px;
 
 }
-.carousel-home-resources-mobile{
-    height: 185%;
+
+.carousel-3d-container figcaption.mobile-title{
+    color: #FF473A;
+    margin-left: 30%;
 }
+
 .carousel-3d-slide.current{
     background-color: transparent;
 }
 .carousel-3d-container figcaption.subtitle{
     font-size: 24px;
     margin: 0;
-    max-width: 15%;
+    max-width: 20%;
     line-height: 1;
     position: absolute;
     bottom:10%;
@@ -159,10 +154,10 @@ export default {
 .carousel-3d-container figcaption.theme{
     font-size: 10px;
     margin: 0;
-
+    max-width: 20%;
     
     position: absolute;
-    bottom:-33%;
+    bottom:23%;
     left:0;
    
 }
