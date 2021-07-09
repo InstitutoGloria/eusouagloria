@@ -1,7 +1,7 @@
 <template>
     <div class="we">
         <v-container class="container text-center">
-            <p class="font-title">{{$t('we_page.organogram.title') }}</p>
+            <p class="font-title">{{$t('we_page.title') }}</p>
             <div :class="{'content-small': $vuetify.breakpoint. smAndDown, 'content': $vuetify.breakpoint. mdAndUp}">
             <p class=" text-justify">
                {{$t('home_page.we.description') }}
@@ -10,10 +10,12 @@
         </v-container>
         <v-divider/>
         <v-container class="container text-center">
+        <p class="font-title">{{$t('we_page.organogram.title') }}</p>
             <Team></Team>
         </v-container>   
         <v-divider/>
         <v-container class="container text-center">
+        <p class="font-title">{{$t('we_page.projects.title') }}</p>
             <TeamProj></TeamProj>
         </v-container> 
     </div>
