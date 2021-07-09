@@ -4,7 +4,7 @@
             <p class="font-title text-center">{{$t('home_page.projects.title') }}</p>
                 <div class="row">
                     <div class="col-md-12">
-                    <div id="carousel-home-resources" class="carousel-home-resources">
+                    <div id="carousel-home-resources" class="carousel-home-resources" >
                         <carousel-3d 
                                     :perspective="0"
                                     :border="0"
@@ -16,47 +16,49 @@
                                     :display=2
                                     :clickable="true">
 
-                        <slide :index="0">
+                        <!-- <slide v-for="(item,index) in slides" :key="index">
                           <v-row style="align-content:end;">
                             <v-col style="align-self:end" cols="3">
-                                <figcaption class="theme">{{$t('home_page.projects.convida.theme') }}</figcaption>
-                                <figcaption class="subtitle">{{$t('home_page.projects.convida.title') }}</figcaption>
-                                <figcaption class="button text-no-wrap">{{$t('home_page.projects.button') }}</figcaption>
+                                <figcaption class="theme">{{$t(item.theme) }}</figcaption>
+                                <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
+                                <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
                             </v-col>
                              <v-col cols="12">
-                                <img style="position:absolute; right:0;bottom:0; width:80%" src="https://loremflickr.com/585/370/paris/?random=1" />
+                                <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
                             </v-col>
                           </v-row>
-                        </slide>
-
-                        <slide :index="1">
-                            <v-row style="align-content:end;">
+                        </slide> -->
+                        <slide v-for="(item,index) in slides" :key="index">
+                          <v-row style="align-content:end;">
                             <v-col style="align-self:end" cols="3">
-                                <figcaption class="theme">{{$t('home_page.projects.game.theme') }}</figcaption>
-                                <figcaption class="subtitle-big">{{$t('home_page.projects.game.title') }}</figcaption>
-                                <figcaption class="button text-no-wrap">{{$t('home_page.projects.button') }}</figcaption>
+                                <figcaption class="theme">{{$t(item.theme) }}</figcaption>
+                                <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
+                                <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
                             </v-col>
                              <v-col cols="12">
-                                <img style="position:absolute; right:0;bottom:0; width:80%" src="https://loremflickr.com/585/370/paris/?random=2" />
-                            </v-col>
-                          </v-row>
-                        </slide>
-
-                        <slide :index="2">
-                            <v-row style="align-content:end;">
-                            <v-col style="align-self:end" cols="3">
-                                <figcaption class="theme">{{$t('home_page.projects.steam.theme') }}</figcaption>
-                                <figcaption class="subtitle">{{$t('home_page.projects.steam.title') }}</figcaption>
-                                <figcaption class="button text-no-wrap">{{$t('home_page.projects.button') }}</figcaption>
-                            </v-col>
-                             <v-col cols="12">
-                                <img style="position:absolute; right:0;bottom:0; width:80%" src="https://loremflickr.com/585/370/paris/?random=3" />
+                                <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
                             </v-col>
                           </v-row>
                         </slide>
 
                         </carousel-3d>
                     </div>
+                    
+                    <!-- <div v-else class="carousel-home-resources-mobile" >
+                        <carousel-3d 
+                                    :controls-visible="true"
+                                    :clickable="true">
+
+                        <slide :index="0">
+                            <figure>
+                                <img style="width:100%" src="https://loremflickr.com/585/370/paris/?random=1" />
+                                <figcaption style="align-self:center" >{{$t('home_page.projects.convida.title') }}</figcaption>
+                            </figure>
+                        </slide>
+
+                        </carousel-3d>
+                    </div> -->
+
                     </div>
             </div>
         </v-container>
@@ -66,7 +68,6 @@
 <script>
 import {Carousel3d, Slide} from 'vue-carousel-3d'
 
-
 export default {
     components: {
         Carousel3d,
@@ -74,8 +75,36 @@ export default {
     }, 
       data(){
         return {
-
+            slides:[
+                {
+                    theme: 'home_page.projects.convida.theme',
+                    subtitle: 'home_page.projects.convida.title',
+                    button: 'home_page.projects.button',
+                    img: 'https://loremflickr.com/585/370/paris/?random=1',
+                },
+                {
+                    theme: 'home_page.projects.game.theme',
+                    subtitle: 'home_page.projects.game.title',
+                    button: 'home_page.projects.button',
+                    img: 'https://loremflickr.com/585/370/paris/?random=2',
+                },
+                {
+                    theme: 'home_page.projects.steam.theme',
+                    subtitle: 'home_page.projects.steam.title',
+                    button: 'home_page.projects.button',
+                    img: 'https://loremflickr.com/585/370/paris/?random=3',
+                },
+            ]
         }
+    },
+    methods:{
+        isMobile() {
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                return true
+            } else {
+                return false
+            }
+        },
     }
 }
 </script>
@@ -102,6 +131,9 @@ export default {
     font-weight: 600;
     padding-bottom: 10px;
 
+}
+.carousel-home-resources-mobile{
+    height: 185%;
 }
 .carousel-3d-slide.current{
     background-color: transparent;
@@ -130,7 +162,7 @@ export default {
 
     
     position: absolute;
-    bottom:23%;
+    bottom:-33%;
     left:0;
    
 }
