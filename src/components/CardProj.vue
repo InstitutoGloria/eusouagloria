@@ -1,7 +1,12 @@
 <template>
   <div>
-    <v-card >
-      <div class="d-flex flex-no-wrap justify-space-between black--text">
+    <v-card
+    class="mx-auto"
+    width="500"
+    max-width="500"
+    outlined
+     >
+      <div class="d-flex flex-wrap justify-space-between black--text">
         <div class="content-body">
           <v-card-title class="headline"> {{ person.name }} </v-card-title>
           <v-card-text>
@@ -41,12 +46,9 @@ export default {
 <style scoped>
 .content-body {
   text-align: left;
-  width: max-content;
-  word-break: unset;
-
 }
 .teste {
-  size: 400px;
+  size: 100px;
 }
 .image_config {
   background-color: blue;
