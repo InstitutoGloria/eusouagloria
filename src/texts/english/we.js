@@ -4,7 +4,7 @@ const we = {
     tagline:"Gloria was born to stop the violence against women and girls",
     
     organogram:{
-        title:"About us",
+        title:"Our Institutional Team",
         ceo:{
             head:"Cristina Castro",
             department:"CEO"
@@ -41,26 +41,41 @@ const we = {
     },
 
     projects:{
-        title:"About us",
+        title:"Our Projects Team",
         convida:{
             head:"Cristina Castro",
-            department:"convida"
+            department:"Convida"
         },
         gloria:{
             head:"Cristina Castro",
-            department:"gloria"
+            department:"Gloria"
         },
         steam:{
             head:"Cristina Castro",
-            department:"steam"
+            department:"STEAM Girls"
         },
         game:{
             head:"Cristina Castro",
-            department:"game"
+            department:"Game - Glória's World"
+        },
+        unops:{
+            head:"Cristina Castro",
+            department:"UNOPs"
+        },
+        ambassador:{
+            head:"Cristina Castro",
+            department:"Glória Young Ambassador"
+        },
+        map:{
+            head:"Cristina Castro",
+            department:"Violece Map"
         }
     },
-    team:{
-        title:"Meet our team"
+    campaigns:{
+        title:"Our Campaigns"
+    },
+    local:{
+        local:"en"
     }
 
 }

@@ -1,7 +1,6 @@
-import MembersProj from "../texts/portugues/MembersProj.js";
 import MembersProjEN from "../texts/english/MembersProj"
 
-let membersp = MembersProj.sort(function(a, b) {
+let membersp = MembersProjEN.sort(function(a, b) {
   // 1) active first than inactive
   let crit_active = (a.lab.active - b.lab.active) * -1;
   if (crit_active !== 0) {
@@ -34,7 +33,7 @@ let membersp = MembersProj.sort(function(a, b) {
   }
 });
 
-export class filterMembersProj {
+export class filterMembersProjEN {
   constructor() {}
 
   byKey(key) {
