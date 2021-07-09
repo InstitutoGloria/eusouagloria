@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import First from "./we/Home.vue";
+import First from "./projects/Top.vue";
 import Organogram from "./we/Organogram.vue";
 import Highlights from "./we/Highlights.vue";
 
