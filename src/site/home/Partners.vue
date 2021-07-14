@@ -3,7 +3,7 @@
         <div class="title text-center">
             <span class="font-title">{{ $t('home_page.partners.title') }}</span>
         </div>
-        <div id="scroll">
+        <div v-if="!isMobile" id="scroll">
             <div class="text-center">
                 <v-row align="center" >
                     <v-col align="center" class="p-10" v-for="img in images" :key="img.file">
@@ -18,13 +18,45 @@
                 </v-row>
             </div>
         </div>
+        <div v-else class="carousel-home-resources-mobile" >
+            <carousel-3d 
+                        :autoplay="true"
+                        :autoplay-timeout="3000"
+                        :controls-prev-html="'&#10092; '"
+                        :controls-next-html="'&#10093;'" 
+                        :controls-width="30"
+                        :controls-height="60"
+                        :controls-visible="true"
+                        :clickable="true">
+
+            <slide v-for="(item,index) in images" :index="index" :key="index">
+                <figure style="align-center">
+                    <v-img 
+                        :src="require(`@/assets/images/parceiros/${item.file}`)"
+                        :height="item.height"
+                        :width="item.width"
+                        contain
+                    />
+                    <!-- <img src="@/assets/images/parceiros/embassy.png" /> -->
+                    <!-- <figcaption class="mobile-title">{{$t(item.title) }}</figcaption> -->
+                </figure>
+            </slide>
+
+            </carousel-3d>
+        </div>
     </div>
 </template>
 
 <script>
+import {Carousel3d, Slide} from 'vue-carousel-3d'
 export default {
+    components: {
+        Carousel3d,
+        Slide
+    },
     data(){
         return {
+            isMobile: false,
             images: [
                 //main ones height 120 (we and bf are too small 150)
                 { file: "embassy.png" ,height: "100px", width: "200px"},
@@ -58,6 +90,15 @@ export default {
                 // { file: "seedin.png" },
             ]
         }
+    },
+    mounted() {
+        this.onResize();
+        window.addEventListener("resize", this.onResize, { passive: true });
+    },
+    methods:{
+        onResize() {
+            this.isMobile = window.innerWidth < 930;
+        },
     }
 }
 </script>

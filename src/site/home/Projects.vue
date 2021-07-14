@@ -64,7 +64,7 @@ export default {
         Carousel3d,
         Slide
     }, 
-      data(){
+    data(){
         return {
             isMobile: false,
             slides:[
