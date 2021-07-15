@@ -26,20 +26,23 @@
                         :controls-next-html="'&#10093;'" 
                         :controls-width="30"
                         :controls-height="60"
-                        :controls-visible="true"
+                        :controls-visible="false"
                         :clickable="true">
 
-            <slide v-for="(item,index) in images" :index="index" :key="index">
-                <figure style="align-center">
-                    <v-img 
-                        :src="require(`@/assets/images/parceiros/${item.file}`)"
-                        :height="item.height"
-                        :width="item.width"
-                        contain
-                    />
-                    <!-- <img src="@/assets/images/parceiros/embassy.png" /> -->
-                    <!-- <figcaption class="mobile-title">{{$t(item.title) }}</figcaption> -->
-                </figure>
+            <slide class="carousel-home-mobile" v-for="(item,index) in images" :index="index" :key="index">
+                <v-col cols="12">
+                    <figure class="carousel-home-mobile">
+                        <v-img 
+                            :src="require(`@/assets/images/parceiros/${item.file}`)"
+                            :height="item.height"
+                            :width="item.width"
+                            contain
+                        />
+                        <!-- <img src="@/assets/images/parceiros/embassy.png" /> -->
+                        <!-- <figcaption class="mobile-title">{{$t(item.title) }}</figcaption> -->
+                    </figure>
+                </v-col>
+                
             </slide>
 
             </carousel-3d>
@@ -105,6 +108,12 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.carousel-home-mobile{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
 
 .partners{
     padding-left: 4%;
