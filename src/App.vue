@@ -25,10 +25,10 @@ export default {
   methods: {
     selectLang(){
       let currentUrl = window.location;
-      if(currentUrl.hostname == "gloriainstitute"){
-        i18n.locale = "en"
-      }else{
+      if(currentUrl.hostname != "gloriainstitute"){
         i18n.locale = "pt-br"
+      }else{
+        i18n.locale = "en"
       }
     }
   }

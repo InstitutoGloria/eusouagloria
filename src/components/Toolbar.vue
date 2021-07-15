@@ -32,7 +32,7 @@ export default {
                 { id: 'pt-br', name: 'Português', flag: '' },
                 { id: 'en', name: 'English', flag: '' },
             ],
-            currentLang: "en"
+            currentLang: "pt-br"
         };
     },
     created() {},
