@@ -15,7 +15,7 @@
             </v-col>
             <v-col xl="6" lg="6" md="6" sm="6" xs="12">
                 <div class="img-container">
-                    <img contain width="400" src="@/assets/images/circulo.png"/>
+                    <img contain width="350" src="@/assets/images/circulo.png"/>
                 </div>
             </v-col>
         </v-row>

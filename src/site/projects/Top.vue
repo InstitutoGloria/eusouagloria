@@ -25,12 +25,12 @@ export default {
 </script>
 <style scoped>
 .home-home{
-    height: 90vh;
+    height: 70vh;
     margin-bottom: 10%;
 }
 
 .home-home-small{
-    height: 80vh;
+    height: 40vh;
 }
 
 .hero-img{
@@ -101,6 +101,8 @@ export default {
     font-size: 200%;
     width: 16%;
     height: 9%;
+    border: 3px solid #853A94;
+
 }
 
 .button-home-md{
@@ -112,6 +114,8 @@ export default {
     font-size: 130%;
     width: 16%;
     height: 9%;
+    border: 3px solid #853A94;
+
 }
 
 .donation-button-home-small{
@@ -123,6 +127,8 @@ export default {
     font-size: 20px;
     width: 50%;
     height: 11%;
+    border: 3px solid #853A94;
+
 }
 
 button.button-home:hover, button.donation-button-home-small:hover, p.button-home-text:hover{

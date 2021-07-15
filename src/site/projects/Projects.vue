@@ -11,7 +11,7 @@
                 <v-expansion-panel-content>
                         <div class="box-images">
                             <div v-for="img in item.images" :key="img" class="image">
-                                <v-img max-width="150" src="https://picsum.photos/id/11/500/300"/>
+                                <v-img max-width="500" src="https://picsum.photos/id/11/500/300"/>
                             </div>
                         </div>
                     <span class="list-description font-weight-light" v-html="item.description"/>

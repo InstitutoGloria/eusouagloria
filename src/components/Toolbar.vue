@@ -29,8 +29,8 @@ export default {
 
             ],
             languages: [
-                { id: 'en', name: 'English', flag: '' },
                 { id: 'pt-br', name: 'Português', flag: '' },
+                { id: 'en', name: 'English', flag: '' },
             ],
             currentLang: "en"
         };

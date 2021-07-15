@@ -5,8 +5,8 @@ import Languages from "../texts/Languages.js";
 Vue.use(VueI18n);
 
 const messages = {
-    "en": Languages.English,
-    "pt-br": Languages.Portugues
+    "pt-br": Languages.Portugues,
+    "en": Languages.English
 };
 
 const i18n = new VueI18n({

@@ -4,7 +4,7 @@
             <v-row>
                 <v-col xl="6" lg="6" md="6" sm="6" xs="12" class="first-col">
                     <div class="img-container">
-                        <img contain width="400" src="@/assets/images/meta-20milhoes.png"/>
+                        <img contain width="350" src="@/assets/images/meta-20milhoes.png"/>
                     </div>
                 </v-col>
                 <v-col xl="6" lg="6" md="6" sm="6" xs="12">

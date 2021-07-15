@@ -118,6 +118,7 @@ export default {
     border-radius: 30px;
     font-size: 230%;
     margin-top: 5%;
+    border: 3px solid #853A94;
 }
 
 .button-home{
@@ -129,6 +130,8 @@ export default {
     font-size: 180%;
     width: 16%;
     height: 9%;
+    border: 3px solid #853A94;
+
 }
 
 .button-home-md{
@@ -140,6 +143,8 @@ export default {
     font-size: 130%;
     width: 16%;
     height: 9%;
+    border: 3px solid #853A94;
+
 }
 
 .donation-button-home-small{
@@ -151,6 +156,8 @@ export default {
     font-size: 20px;
     width: 50%;
     height: 11%;
+    border: 3px solid #853A94;
+
 }
 
 button.button-home:hover, button.donation-button-home-small:hover, p.button-home-text:hover{
