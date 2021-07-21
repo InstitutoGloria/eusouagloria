@@ -652,6 +652,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
+      key:"game",
       area: "Jogo - Mundo de Glória"
     }
   },

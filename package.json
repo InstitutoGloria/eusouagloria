@@ -18,7 +18,9 @@
     "vue-router": "^3.2.0",
     "vue-the-mask": "^0.11.1",
     "vue-video-player": "^5.0.2",
-    "vuetify": "^2.4.11"
+    "vue-xlsx": "^0.2.1",
+    "vuetify": "^2.4.11",
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.12",

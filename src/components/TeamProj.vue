@@ -112,9 +112,6 @@ export default {
     }
   },
   methods: {
-    renderTeam(){
-      $t('we_page.local.local') == 'en' ? filterMembersProEN($t(`${proj.department}`)) : filterMembersProj($t(`${proj.department}`))
-    },
     filterMembersProj(area) {
       this.current_option = area; 
       if (area == "Convida") {
@@ -131,24 +128,12 @@ export default {
         this.current_team = this.map;
       } else if (area == "UNOPs") {
         this.current_team = this.unop;
-      }
-    },
-    filterMembersProjEN(area) {
-      this.current_option = area; 
-      if (area == "Convida") {
-        this.current_team = this.convida;
-      } else if (area == "Glória") {
-        this.current_team = this.gloria;
-      } else if (area == "STEAM") {
-        this.current_team = this.steam;
-      } else if (area == "Game - Glória's World" ) {
+      }else if (area == "Game - Glória's World" ) {
         this.current_team = this.gameEN;
       } else if (area == "Violence Map" ) {
         this.current_team = this.mapEN;
       } else if (area == "Glória Young Ambassadors" ) {
         this.current_team = this.ambEN;
-      } else if (area == "UNOPs") {
-        this.current_team = this.unop;
       }
     }
   }

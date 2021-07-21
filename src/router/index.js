@@ -6,7 +6,7 @@ import Home from "../site/Home.vue";
 import We from "../site/We.vue";
 import About from "../site/About.vue"
 import Projects from "../site/Projects.vue"
-
+import Excel from "../components/teste_excel.vue"
 Vue.use(VueRouter)
 
 const routes = [
@@ -33,6 +33,11 @@ const routes = [
         path: 'projects',
         name: "Projects",
         component: Projects
+      },
+      {
+        path: 'teste/excel',
+        name: "Excel",
+        component: Excel
       },
     ]
   },
