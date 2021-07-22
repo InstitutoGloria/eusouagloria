@@ -2,7 +2,7 @@
     <div id="projects">
         <div class="our-projects">
             <v-btn x-large outlined elevation="24" class="button">
-                Conheça nossos projetos
+                {{$t('about_page.projects.button') }}
             </v-btn>
         </div>
         <div class="projects">

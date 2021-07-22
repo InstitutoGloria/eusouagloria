@@ -14,8 +14,8 @@
             </v-col>
             <v-col xl="6" lg="6" md="6" sm="6" xs="6">
                 <div class="main-text">
-                    <span class="title-manifest font-weight-bold">{{title}}</span><br>
-                    <span class="text-manifest font-weight-thin">{{text}}</span>
+                    <span class="title-manifest font-weight-bold">{{$t('about_page.manifesto.title') }}</span><br>
+                    <span class="text-manifest font-weight-thin">{{$t('about_page.manifesto.text') }}</span>
                 </div>
             </v-col>
         </v-row>
@@ -33,8 +33,8 @@
             </v-row>
             <v-row xl="6" lg="6" md="6" sm="6" xs="6">
                 <div class="main-text">
-                    <span class="title-manifest font-weight-bold">{{title}}</span><br>
-                    <span class="text-manifest font-weight-thin">{{text}}</span>
+                    <span class="title-manifest font-weight-bold">{{$t('about_page.manifesto.title') }}</span><br>
+                    <span class="text-manifest font-weight-thin">{{$t('about_page.manifesto.text') }}</span>
                 </div>
             </v-row>
         </v-col>
@@ -46,8 +46,6 @@ export default {
     data(){
         return {
             isMobile: false,
-            title: "Conheça o nosso manifesto!",
-            text: "Loren ipsum dolor sit amet, consectetur adipiscing elit. sed at risus neque. cras sit emet ligula ut justo"
         }
     },    
     mounted() {
