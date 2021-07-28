@@ -37,7 +37,7 @@ const home = {
     title: "Gloria Institute",
     we:{
         title:"Who is Gloria?",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at risus neque. Cras sit amet ligula ut justo commodo porta id ut enim.Nulla est lectus, mollis sit amet vehicula id, volutpat eget mauris.",
+        description: "An Artificial Inteligence, a little robot, focused on ending the violence against women and girls. Glória seeks, through different projects, collect and mine data, in which, from the 'stories' told, it learns the best way to combat gender violence.",
         button: "Find out more"
     },
     projects:{

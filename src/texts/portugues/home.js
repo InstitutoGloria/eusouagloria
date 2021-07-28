@@ -38,7 +38,7 @@ const home = {
 
     we:{
         title:"Quem é a Gloria?",
-        description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at risus neque. Cras sit amet ligula ut justo commodo porta id ut enim.Nulla est lectus, mollis sit amet vehicula id, volutpat eget mauris.",
+        description: " Uma inteligência artificial, uma robozinha, focada em acabar com a violência contra mulheres e meninas. A Glória busca, atravpes de diversos projetos, coletar e minerar dados em que, a partir de “histórias” contadas, aprende o melhor caminho para o combate à violência de gênero.",
         button: "Saiba mais"
     },
 

@@ -4,7 +4,6 @@
             <p class="hero-title">{{ $t("volunteer_page.title") }}</p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("volunteer_page.tagline") }}</p>
             <v-btn 
-                width="20%" 
                 height="12%" 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeMA_xB2I1H-uBigevs8MmDKgoMv5aMxVS3ZVDeYfgwHxZR8A/viewform?usp=sf_link"
                 target="blank"
@@ -123,7 +122,7 @@ export default {
     border-radius: 35px;
     font-weight: 800;
     font-size: 16pt;
-    width: 43%;
+    /* width: 43%; */
     height: 5%;
     border: 3px solid #853A94;
 
@@ -136,7 +135,7 @@ export default {
     border-radius: 30px;
     font-weight: 600;
     font-size: 10pt;
-    width: 50%;
+    /* width: 50%; */
     height: 5%;
     border: 3px solid #853A94;
 
