@@ -1,9 +1,11 @@
 <template>
     <div id="news">
-        {{$t('we_page.campaigns.title') }}
+        <!-- <div>
+            {{$t('we_page.campaigns.title') }}
+        </div> -->
         <div class="new" v-for="(i, key) in $t('news_page.news')" :key="key">
             <v-row>
-                <v-col xl="2" lg="2" md="2" sm="12" xs="12">
+                <v-col cols="12" xl="2" lg="2" md="2" sm="12" xs="12">
                     <div class="div_img">
                         <v-img
                             max-width="150"
@@ -12,7 +14,7 @@
                         />
                     </div>
                 </v-col>
-                <v-col xl="8" lg="8" md="8" sm="12" xs="12">
+                <v-col cols="12" xl="8" lg="8" md="8" sm="12" xs="12">
                     <div class="main_title">
                         <span>
                             {{ i.txt }}
@@ -25,7 +27,7 @@
                         </p>
                     </div>
                 </v-col>
-                <v-col xl="2" lg="2" md="2" sm="12" xs="12">
+                <v-col cols="12" xl="2" lg="2" md="2" sm="12" xs="12">
                     <div class="div_button">
                         <v-btn outlined class="button" :href="i.link" target="_blank">{{$t('news_page.button') }}</v-btn>
                     </div>

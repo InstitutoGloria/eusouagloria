@@ -24,6 +24,8 @@
 <script>
 export default {
     name: "projects",
+    components: {
+    },
     data(){
         return {
             
@@ -37,6 +39,7 @@ export default {
     margin-top: 4%;
     margin-right: 10%;
     margin-left: 10%;
+    margin-bottom: 3%;
 }
 .list-title{
     color: #843A93;
