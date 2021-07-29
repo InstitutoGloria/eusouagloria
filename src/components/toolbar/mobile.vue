@@ -1,7 +1,7 @@
 <template>
     <div class="toolbar">
         <v-expand-transition>
-        <div class="menu-mobile" v-if="drawer">
+        <div class="menu-mobile grey lighten-4" v-if="drawer">
             <div class="button-position" v-for="item in items" :key="item.id">
                 <v-btn
                     text
