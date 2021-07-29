@@ -10,9 +10,9 @@
 
         <div>
             <v-img  
-            :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg-md': $vuetify.breakpoint. md, 'gloriaimg': $vuetify.breakpoint. lgAndUp}"
-            src="../../assets/images/home/gloria-imagem-removebg-preview.png"
-            contain
+                :class="{'gloriaimg-small': $vuetify.breakpoint. smAndDown, 'gloriaimg-md': $vuetify.breakpoint. md, 'gloriaimg': $vuetify.breakpoint. lgAndUp}"
+                src="../../assets/images/home/gloria-imagem-removebg-preview.png"
+                contain
             />   
         </div>
 

@@ -9,9 +9,9 @@
                 </v-col>
                 <v-col xl="6" lg="6" md="6" sm="6" xs="12">
                     <div class="main-text">
-                        <span class="title-goals font-weight-bold"> <b>{{title}}</b> </span><br>
+                        <span class="title-goals font-weight-bold"> <b>{{ $t("about_page.goals.title") }}</b> </span><br>
                         <div class="icon-retangle"/>
-                        <span class="text-goals">{{text}}</span>
+                        <span class="text-goals">{{ $t("about_page.goals.text") }}</span>
                     </div>
                 </v-col>
             </v-row>

@@ -1,7 +1,7 @@
 <template>
     <div :class="{'home-home-small': $vuetify.breakpoint. smAndDown, 'home-home': $vuetify.breakpoint. mdAndUp}">
         <div :class="{'hero-img-small': $vuetify.breakpoint. smAndDown, 'hero-img': $vuetify.breakpoint. mdAndUp}">
-            <p class="hero-title">{{ $t("home_page.title") }}</p><br>
+            <p class="hero-title">{{ $t("home_page.title") }} | {{ $t(`home_page.toolbar.${location}`)  }} </p><br>
             <p :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}">{{ $t("home_page.tagline") }}</p>
             <button width="20%" height="12%" :class="{'donation-button-home-small': $vuetify.breakpoint. smAndDown, 'button-home-md': $vuetify.breakpoint. md, 'button-home': $vuetify.breakpoint. lgAndUp}">
                 {{$t('home_page.home.button') }}
@@ -14,11 +14,15 @@
 <script>
 export default {
     components:{
-
     },
     data(){
         return {
 
+        }
+    },
+    computed: {
+        location() {
+            return this.$route.name.toLowerCase();
         }
     }
 }
