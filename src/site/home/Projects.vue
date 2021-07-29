@@ -21,10 +21,14 @@
                                     <v-col style="align-self:end" cols="3">
                                         <figcaption class="theme">{{$t(item.theme) }}</figcaption>
                                         <figcaption class="subtitle">{{$t(item.title) }}</figcaption>
-                                        <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
+                                        <figcaption class="button text-no-wrap">
+                                            <v-btn to="/projects" text>
+                                                {{$t(item.button) }}
+                                            </v-btn>
+                                        </figcaption>
                                     </v-col>
                                     <v-col cols="12">
-                                        <img style="position:absolute; right:0;bottom:0; width:80%" :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.width" :height="item.height"/>
+                                        <img style="position:absolute; right:0;bottom:0;width:80%" :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.width" :height="item.height"/>
                                     </v-col>
                                 </v-row>
                             </slide>
@@ -180,8 +184,8 @@ export default {
     background-color: transparent;
    
     position: absolute;
-    bottom:5%;
-    left:0;
+    bottom:25%;
+    left:0%;
 }
 .content{
     font-weight: 500;
