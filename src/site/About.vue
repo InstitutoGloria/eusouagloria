@@ -11,10 +11,11 @@
 
 <script>
 import first from "./home/Home.vue";
-import projects from "./about/projects.vue"
+import projects from "./home/Projects.vue"
 import platform from "./about/platform.vue"
 import manifest from "./about/manifest.vue"
 import goals from "./about/goals.vue"
+
 
 export default {
     components: {

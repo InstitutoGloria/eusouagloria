@@ -47,7 +47,9 @@
                         <slide v-for="(item,index) in slides" :index="index" :key="index">
                             <!-- :width="item.mobile_width" :height="item.mobile_height" -->
                             <figure>
-                                <img :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.mobile_width" :height="item.mobile_height"  />
+                                <router-link to="/projects">
+                                    <img :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.mobile_width" :height="item.mobile_height"  />
+                                </router-link>
                                 <figcaption class="mobile-title">{{$t(item.title) }}</figcaption>
                             </figure>
                         </slide>
