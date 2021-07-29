@@ -24,7 +24,7 @@
                                         <figcaption class="button text-no-wrap">{{$t(item.button) }}</figcaption>
                                     </v-col>
                                     <v-col cols="12">
-                                        <img style="position:absolute; right:0;bottom:0; width:80%" :src="item.img" />
+                                        <img style="position:absolute; right:0;bottom:0; width:80%" :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.width" :height="item.height"/>
                                     </v-col>
                                 </v-row>
                             </slide>
@@ -41,8 +41,9 @@
                                     :clickable="true">
 
                         <slide v-for="(item,index) in slides" :index="index" :key="index">
+                            <!-- :width="item.mobile_width" :height="item.mobile_height" -->
                             <figure>
-                                <img :src="item.img" />
+                                <img :src="require(`@/assets/images/projetos/${item.img}`)" :width="item.mobile_width" :height="item.mobile_height"  />
                                 <figcaption class="mobile-title">{{$t(item.title) }}</figcaption>
                             </figure>
                         </slide>
@@ -72,19 +73,31 @@ export default {
                     theme: 'home_page.projects.convida.theme',
                     title: 'home_page.projects.convida.title',
                     button: 'home_page.projects.button',
-                    img: 'https://loremflickr.com/585/370/paris/?random=1',
+                    img: 'Convida.png',
+                    width: "100px",
+                    height: "400px",
+                    mobile_width: "100px",
+                    mobile_height: "200px",
                 },
                 {
                     theme: 'home_page.projects.game.theme',
                     title: 'home_page.projects.game.title',
                     button: 'home_page.projects.button',
-                    img: 'https://loremflickr.com/585/370/paris/?random=2',
+                    img: 'O_mundo_de_gloria.png',
+                    width: "100px",
+                    height: "400px",
+                    mobile_width: "100px",
+                    mobile_height: "200px",
                 },
                 {
                     theme: 'home_page.projects.steam.theme',
                     title: 'home_page.projects.steam.title',
                     button: 'home_page.projects.button',
-                    img: 'https://loremflickr.com/585/370/paris/?random=3',
+                    img: 'Steam_power.png',
+                    width: "100px",
+                    height: "350px",
+                    mobile_width: "100px",
+                    mobile_height: "200px",
                 },
             ]
         }
