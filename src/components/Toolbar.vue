@@ -48,7 +48,7 @@ export default {
     },
     methods: {
         onResize() {
-            this.isMobile = window.innerWidth < 930;
+            this.isMobile = window.innerWidth < 1070;
         },
         goTo() {
             this.$router.push("/");
