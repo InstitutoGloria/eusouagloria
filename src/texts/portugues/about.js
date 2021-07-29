@@ -2,6 +2,9 @@
 // about > nome_component > nome_texto > "Texto"
 
 const about = {
+    projects:{
+        button: "CONHEÇA NOSSOS PROJETOS",
+    },
     golden_circle: {
         title1: "A plataforma",
         title2: "O CÍRCULO DE OURO",
