@@ -13,6 +13,9 @@ import volunteer_pt from './portugues/volunteer.js'
 import about_en from './english/about.js'
 import about_pt from './portugues/about.js'
 
+import project_en from './english/projects.js'
+import project_pt from './portugues/projects.js'
+
 const Languages = {
     English: {
         home_page: home_en,
@@ -20,6 +23,7 @@ const Languages = {
         news_page: news_en,
         volunteer_page: volunteer_en,
         about_page: about_en,
+        projects_page: project_en,
     },
     Portugues: {
         home_page: home_pt,
@@ -27,6 +31,7 @@ const Languages = {
         news_page: news_pt,
         volunteer_page: volunteer_pt,
         about_page: about_pt,
+        projects_page: project_pt
 
     },
 }
