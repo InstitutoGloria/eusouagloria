@@ -6,7 +6,7 @@
             <v-btn 
                 width="20%" 
                 height="12%" 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeMA_xB2I1H-uBigevs8MmDKgoMv5aMxVS3ZVDeYfgwHxZR8A/viewform?usp=sf_link"
+                href="https://docs.google.com/forms/d/1F56a7_o4RuzFQr0Xb8ckiKju9oHPyVl5oKrNff_t-zU/edit?usp=sharing"
                 target="blank"
                 :class="{'donation-button-home-small': 
                     $vuetify.breakpoint. smAndDown, 'button-home-md': 
