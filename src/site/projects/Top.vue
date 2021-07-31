@@ -92,8 +92,9 @@ export default {
     font-family: 'Montserrat',sans-serif;
     background-color: white;
     border-radius: 30px;
-    font-size: 250%;
+    font-size: 230%;
     margin-top: 5%;
+    border: 3px solid #853A94;
 }
 
 .button-home{
@@ -102,7 +103,7 @@ export default {
     background-color: white;
     border-radius: 35px;
     font-weight: 800;
-    font-size: 200%;
+    font-size: 180%;
     width: 16%;
     height: 9%;
     border: 3px solid #853A94;

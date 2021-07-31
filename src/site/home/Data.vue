@@ -9,14 +9,10 @@
                     <span class="middle-text">
                         {{$t(item.text) | number }} <br>
                     </span>
-                    <v-btn outlined rounded class="button">{{$t(item.button)}}</v-btn>
+                    <v-btn href="https://relogiosdaviolencia.com.br/" target="_blank" outlined rounded class="button">{{$t(item.button)}}</v-btn>
                 </v-col>
                 <v-col align="center" xl="1" md="1" sm="12" cols="12">
-                    <!-- :class="{'hero-tag-small': $vuetify.breakpoint. smAndDown, 'hero-tag': $vuetify.breakpoint. mdAndUp}" -->
                     <v-img :class="{'arrow_small': $vuetify.breakpoint. smAndDown, 'arrow': $vuetify.breakpoint. mdAndUp}"  :src="require(`@/assets/${item.arrow}`)"></v-img>
-
-                    <!-- <v-img v-if="!isMobile()" class="arrow" style="width:50%" :src="require(`@/assets/${item.arrow}`)"></v-img>
-                    <v-img v-if="is_mobile" class="arrow_small" style="width:10%" :src="require(`@/assets/${item.arrow}`)"></v-img> -->
                 </v-col>
                 <v-col align="center" xl="4" md="4" sm="12" cols="12">
                     <span class="counter">
@@ -113,15 +109,6 @@ export default {
                 return false
             }
         },
-
-
-
-        /* IstartInterval: function () {
-			setInterval(function() {
-			this.myText = this.myText + 1
-            console.log(this.myText)
-            }, 1000);
-        } */
 
     }
 }

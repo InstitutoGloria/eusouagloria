@@ -14,7 +14,7 @@ const about = {
     },
     manifesto: {
         title: "Veja nosso manifesto!",
-        text: "Loren ipsum dolor sit amet, consectetur adipiscing elit. sed at risus neque. cras sit emet ligula ut justo",
+        text: "A Gloria nasceu para buscar soluções sociais transformadoras e deixar um legado para as próximas gerações de homens e mulheres.  Somos uma plataforma de transformação social, a partir da coleta de dados, geramos conteúdo educacional e criamos uma rede de apoio com as ferramentas necessárias para a melhoria social.",
     },
     goals: {
         title: "Em 2 anos, queremos que a Glória esteja no mundo inteiro",

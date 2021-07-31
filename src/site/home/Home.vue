@@ -45,7 +45,7 @@ export default {
     align-self: center;
     position: relative;
     top: -40vh;
-    height: 80vh;
+    height: 70vh;
 }
 
 .gloriaimg-md{

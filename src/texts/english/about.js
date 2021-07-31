@@ -14,7 +14,7 @@ const about = {
     },
     manifesto:{
         title: "Check out our manifesto!",
-        text: "Loren ipsum dolor sit amet, consectetur adipiscing elit. sed at risus neque. cras sit emet ligula ut justo",
+        text: "Gloria was born to seek transformative social solutions and leave a legacy for the next generations of men and women. We are a platform for social transformation, based on data collection, we generate educational content and create a support network with the necessary tools for social improvement.",
     },
     goals: {
         title: "In 2 years, we want gloria around the world",
