@@ -6,7 +6,7 @@ const volunteer = {
     tagline:"A Gloria nasceu para acabar com a violência contra mulheres e meninas",
     
     top:{
-        button: "Seja um voluntário",
+        button: "Seja um voluntário(a)",
     },
    
     toolbar: {

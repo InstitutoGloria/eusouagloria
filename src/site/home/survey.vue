@@ -12,7 +12,7 @@
                 </v-col>
 
                 <v-col cols="12" class="pt-8">
-                    <v-btn rounded outlined class="button" @click="form=!form" v-if="!form && !block"><b> {{ $t('home_page.research.button') }} </b></v-btn>
+                    <v-btn rounded outlined class="button-rounded-purple" @click="form=!form" v-if="!form && !block"><b> {{ $t('home_page.research.button') }} </b></v-btn>
                     <span v-if="block">
                         <p class="poppins text-h5 purple--text"> {{ $t('home_page.research.thankyou') }} </p>
                     </span>

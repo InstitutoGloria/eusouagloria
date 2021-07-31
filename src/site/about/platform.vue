@@ -3,14 +3,14 @@
         <v-row>
             <v-col xl="6" lg="6" md="6" sm="6" xs="12" id="first-col">
                 <div class="main-text">
-                    <span class="font-weight-thin"> A plataforma </span><br>
-                    <span class="font-weight-bold"> O CÍRCULO DE OURO </span>
+                    <span class="font-weight-thin"> {{ $t("about_page.golden_circle.title1") }} </span><br>
+                    <span class="font-weight-bold"> {{ $t("about_page.golden_circle.title2") }} </span>
                 </div>
                 <div class="icon-retangle"/>
                 <div class="topics">
-                    <span class="item"> {{ first }} </span><br><br>
-                    <span class="item"> {{ second }} </span><br><br>
-                    <span class="item"> {{ third }} </span>
+                    <span class="item"> {{ $t("about_page.golden_circle.first") }} </span><br><br>
+                    <span class="item"> {{ $t("about_page.golden_circle.second") }} </span><br><br>
+                    <span class="item"> {{ $t("about_page.golden_circle.third") }} </span>
                 </div>
             </v-col>
             <v-col xl="6" lg="6" md="6" sm="6" xs="12">
@@ -26,9 +26,7 @@
 export default {
     data(){
         return {
-            first: "1 - A glória nasceu com o ideal de reduzir (e, por que não, combater) a opressão e violência física, psicológica e sexual contra mulheres",
-            second: "2 - A partir da coleta de dados, geramos conteúdo educacional e criamos uma rede de apoio com as ferramentas necessárias para a melhoria social",
-            third: "3 - Uma plataforma segura e de fácil acesso para mulheres em situação de vulnerabilidade e repressão"
+
         }
     }
 }

@@ -73,7 +73,6 @@ export default {
                 //second tier 100
                 { file: "qubo.svg" ,height: "100px", width: "200px"},
                 { file: "ambev_voa.png" ,height: "130px", width: "200px"},
-                // { file: "cosmobots.png" ,height: "100px", width: "200px"},
                 { file: "mlabs.png" ,height: "150px", width: "200px"},
 
                 //third tier height 75(demarest too big 50)
@@ -85,12 +84,10 @@ export default {
                 { file: "cnpq.jpg" ,height: "100px", width: "200px"},
                 { file: "logo_genesys.png" ,height: "130px", width: "200px"},
                 { file: "ddd.png" ,height: "100px", width: "200px"},                
-                { file: "TechSoup.jpg" ,height: "100px", width: "200px"},
-
+                { file: "TechSoup.jpg" ,height: "200px", width: "200px"},
                 { file: "pactoglobal.jpg" ,height: "100px", width: "200px"},
+                { file: "Power-fi.png" ,height: "150px", width: "200px"},
 
-                // { file: "freefree.png" },
-                // { file: "seedin.png" },
             ]
         }
     },

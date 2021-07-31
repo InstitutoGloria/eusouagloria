@@ -44,4 +44,8 @@ export default {
     line-height: 36px;
     letter-spacing: 0.1px;
 }
+.button-rounded-purple{
+    color: #853A94;
+    background-color: white;
+}
 </style>
