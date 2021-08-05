@@ -8,9 +8,9 @@ const about = {
     golden_circle: {
         title1: "The platform",
         title2: "The circle of gold",
-        first: "1 - A glória nasceu com o ideal de reduzir (e, por que não, combater) a opressão e violência física, psicológica e sexual contra mulheres",
-        second: "2 - A partir da coleta de dados, geramos conteúdo educacional e criamos uma rede de apoio com as ferramentas necessárias para a melhoria social",
-        third: "3 - Uma plataforma segura e de fácil acesso para mulheres em situação de vulnerabilidade e repressão"
+        first: "1- Gloria was born with the ideal of reducing (and, why not, combating) oppression and physical, psychological and sexual violence against women.",
+        second: "2- From data collection, we generate educational content and create a support network with the necessary tools for social improvement",
+        third: "3- A safe and easily accessible platform for women in situations of vulnerability and repression"
     },
     manifesto:{
         title: "Check out our manifesto!",
@@ -18,7 +18,7 @@ const about = {
     },
     goals: {
         title: "In 2 years, we want gloria around the world",
-        text: "O objetivo do projeto é impactar mais de 20 milhões de pessoas, além de gerar relatórios com segmentação por faixa etária, local, dados socioeconômicos e padrão de ocorrências, que auxiliem o público na formação de políticas, projetos e ações para combater a violência contra a mulher"
+        text: "The project's objective is to impact more than 20 million people, in addition to generating reports segmented by age group, location, socioeconomic data and pattern of occurrences, which help the public in the formation of policies, projects and actions to combat violence against women"
     }
 }
 
