@@ -18,7 +18,7 @@
         </div>
         <div class="subtitle font-weight-light">
             <span>
-                {{ text }}
+                {{ $t("projects_page.description") }}
             </span>
         </div><br>
         <v-divider class="subtitle"/>
