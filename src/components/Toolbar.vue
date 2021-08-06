@@ -25,7 +25,7 @@ export default {
                 { id: 2, name: "home_page.toolbar.about", routeName:"/about" },
                 { id: 3, name: "home_page.toolbar.projects", routeName:"/projects" },
                 { id: 4, name: "home_page.toolbar.news",routeName:"/news" },
-                { id: 5, name: "home_page.toolbar.we", routeName:"/we"},
+                // { id: 5, name: "home_page.toolbar.we", routeName:"/we"},
                 { id: 6, name: "home_page.toolbar.volunteer", routeName:"/volunteer"},
 
             ],
