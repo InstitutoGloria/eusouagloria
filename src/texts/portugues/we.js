@@ -14,20 +14,20 @@ const we = {
             department:"Business"
         },
         legal:{
-            head:"Cristina Castro",
-            department:"Legal"
+            head:"Cristina Neves",
+            department:"Jurídico"
         },
         tech:{
-            head:"Cristina Castro",
-            department:"Technology"
+            head:"Gustavo Guimarães",
+            department:"Tecnologia"
         },
         fin:{
             head:"Cristina Castro",
-            department:"Finances"
+            department:"Finanças"
         },
         gov:{
-            head:"Cristina Castro",
-            department:"Governances"
+            head:"Isabela Allende",
+            department:"Governança"
         },
         proj:{
             head:"Cristina Castro",

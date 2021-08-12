@@ -1,4 +1,4 @@
-import Members from "../texts/portugues/Members.js";
+import Members from "../texts/english/Members.js";
 
 let members = Members.sort(function(a, b) {
   // 1) active first than inactive
@@ -33,7 +33,7 @@ let members = Members.sort(function(a, b) {
   }
 });
 
-export class filterMembers {
+export class filterMembersEN {
   constructor() {}
 
   byKey(key) {

@@ -1,14 +1,18 @@
 <template>
   <div>
-    <v-card >
-      <v-img  class="mx-auto" width="200" height="225" tile src="https://loremflickr.com/250/370/paris/?random=1" dark>
+    <v-card 
+      max-width="400"
+      elevation="2"
+      class="card"
+    >
+      <v-img  width="400" height="500" tile :src="require(`../assets/organogram/${person.picture}`)" aspect-ratio="1" dark>
       </v-img> 
-
       <div class="d-flex flex-no-wrap justify-space-between black--text">
         <div class="content-body">
           <v-card-title class="headline"> {{ person.name }} </v-card-title>
           <v-card-text>
             {{ person.job }} <br />
+            {{person.contact}}
           </v-card-text>
         </div>
       </div>
@@ -42,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+.card{
+  margin: auto;
+  align-self: center;
+}
 .content-body {
   text-align: left;
 }
