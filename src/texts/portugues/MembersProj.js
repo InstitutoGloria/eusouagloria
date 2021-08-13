@@ -415,7 +415,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -425,7 +425,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -435,7 +435,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -445,7 +445,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -455,7 +455,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -465,7 +465,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -475,7 +475,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -485,7 +485,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -495,7 +495,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -505,7 +505,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -515,7 +515,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -525,7 +525,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -535,7 +535,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -545,7 +545,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -555,7 +555,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -565,7 +565,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -575,7 +575,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },   {
     key: "Leticia",
@@ -584,7 +584,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },   {
     key: "Lucas",
@@ -593,7 +593,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },   {
     key: "Marina",
@@ -602,7 +602,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },   
   {
@@ -612,7 +612,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -622,7 +622,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -632,7 +632,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -642,7 +642,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -652,7 +652,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -662,7 +662,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -672,7 +672,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -682,7 +682,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -692,7 +692,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
   {
@@ -702,7 +702,7 @@ const MembersProj = [
     belong: true,
     lab: {
       active: true,
-      area: "Jogo - Mundo de Glória"
+      area: "Jogo-Mundo de Glória"
     }
   },
 ];

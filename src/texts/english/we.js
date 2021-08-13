@@ -48,7 +48,7 @@ const we = {
         },
         gloria:{
             head:"Cristina Castro",
-            department:"Gloria"
+            department:"Glória"
         },
         steam:{
             head:"Cristina Castro",
@@ -56,7 +56,7 @@ const we = {
         },
         game:{
             head:"Cristina Castro",
-            department:"Game - Glória's World"
+            department:"Game-Glória's World"
         },
         unops:{
             head:"Cristina Castro",
@@ -64,7 +64,7 @@ const we = {
         },
         ambassador:{
             head:"Cristina Castro",
-            department:"Glória Young Ambassador"
+            department:"Glória's Young Ambassador"
         },
         map:{
             head:"Cristina Castro",

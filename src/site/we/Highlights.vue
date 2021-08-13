@@ -121,10 +121,10 @@ export default {
     justify-content: center;
     
 }
-.title{
+.font-title{
     color: #000000;
     font-weight: 600;
-    padding-bottom: 10px;
+    margin-bottom: 5%;
 }
 .content{
     font-weight: 500;

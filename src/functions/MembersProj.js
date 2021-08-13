@@ -1,5 +1,4 @@
 import MembersProj from "../texts/portugues/MembersProj.js";
-import MembersProjEN from "../texts/english/MembersProj"
 
 let membersp = MembersProj.sort(function(a, b) {
   // 1) active first than inactive

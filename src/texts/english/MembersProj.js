@@ -12,7 +12,7 @@ const MembersProj = [
     {
       key: "Beatriz",
       name: "Beatriz Carneiro Passos",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -22,7 +22,7 @@ const MembersProj = [
     {
       key: "Fernanda",
       name: "Fernanda Gama Neves da Silva",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -31,7 +31,7 @@ const MembersProj = [
     },{
       key: "Isabella",
       name: "Isabella Lopes de Oliveira",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -41,7 +41,7 @@ const MembersProj = [
     {
       key: "João",
       name: "João Paulo Frota Damasio",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -51,7 +51,7 @@ const MembersProj = [
     {
       key: "Kamilla",
       name: "Kamilla Gonçalves de Souza",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -61,7 +61,7 @@ const MembersProj = [
     {
       key: "Rachel",
       name: "Rachel Borille de Almeida",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -71,7 +71,7 @@ const MembersProj = [
     {
       key: "Rebeca",
       name: "Rebeca Barbara da Silva Rios",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -81,7 +81,7 @@ const MembersProj = [
     {
       key: "Savia",
       name: "Sávia Braga Tenório Dantas",
-      job: "medicina",
+      job: "medicine",
       belong: true,
       lab: {
         active: true,
@@ -91,7 +91,7 @@ const MembersProj = [
     {
       key: "Alomar",
       name: "Alomar K. Fernandes de Medeiros",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -101,7 +101,7 @@ const MembersProj = [
     {
       key: "Antonio",
       name: "Antônio Vinícius Nunes de Alencar",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -111,7 +111,7 @@ const MembersProj = [
     {
       key: "Heverton",
       name: "Heverton Barbosa da Mota Bezerra",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -121,7 +121,7 @@ const MembersProj = [
     {
       key: "Hugo",
       name: "Hugo Silva de Vasconcelos",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -131,7 +131,7 @@ const MembersProj = [
     {
       key: "Miriam",
       name: "Miriam do Carmo Souza",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -141,7 +141,7 @@ const MembersProj = [
     {
       key: "PedroAugusto",
       name: "Pedro Augusto Martinho Magnano",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -151,7 +151,7 @@ const MembersProj = [
     {
       key: "Rhógeris",
       name: "Rhógeris Lisboa Gomes",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -161,7 +161,7 @@ const MembersProj = [
     {
       key: "Victor",
       name: "Victor Cardoso Alves",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -171,7 +171,7 @@ const MembersProj = [
     {
       key: "Walesson",
       name: "Walesson Alves de Souza",
-      job: "desenvolvedor",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -181,7 +181,7 @@ const MembersProj = [
     {
       key: "Eduardo",
       name: "Eduardo de Oliveira Santos",
-      job: " ",
+      job: "developer",
       belong: true,
       lab: {
         active: true,
@@ -191,7 +191,7 @@ const MembersProj = [
     {
       key: "Amanda",
       name: "Amanda da Solidade Silva",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -201,7 +201,7 @@ const MembersProj = [
     {
       key: "Ana",
       name: "Ana Beatriz Castelo Branco Soares",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -211,7 +211,7 @@ const MembersProj = [
     {
       key: "Ingrid",
       name: "Ingrid Gaston Gonçalves",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -221,7 +221,7 @@ const MembersProj = [
     {
       key: "Izabella",
       name: "Izabella Cesar Ribeiro",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -231,7 +231,7 @@ const MembersProj = [
     {
       key: "João",
       name: "João Batista de Holanda Lopes",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -241,7 +241,7 @@ const MembersProj = [
     {
       key: "Laura",
       name: "Laura Xavier e Silva",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -251,7 +251,7 @@ const MembersProj = [
     {
       key: "Stephanie",
       name: "Stephanie Nnunes Cavalcante",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -261,7 +261,7 @@ const MembersProj = [
     {
       key: "Vinicius",
       name: "Vinicius Rocha Cardozo da Silva",
-      job: "comunicação",
+      job: "communication",
       belong: true,
       lab: {
         active: true,
@@ -291,7 +291,7 @@ const MembersProj = [
     {
       key: "Alessandra",
       name: "Alessandra Carina de Jesus Gomes Pérez",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -301,7 +301,7 @@ const MembersProj = [
     {
       key: "AnaBea",
       name: "Ana Beatriz Castelo Branco SOares",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -311,7 +311,7 @@ const MembersProj = [
     {
       key: "AnaCarol",
       name: "Ana Carolina de Andrade Lima Orlandi",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -321,7 +321,7 @@ const MembersProj = [
     {
       key: "Isadora",
       name: "Isadora Flores de Noronha Figueiredo Pantazopoulos",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -331,7 +331,7 @@ const MembersProj = [
     {
       key: "Larrisa",
       name: "Larissa Verginia do Nascimento Miranda",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -341,7 +341,7 @@ const MembersProj = [
     {
       key: "Waleska",
       name: "Waleska Çuanna Borges Dias",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -351,7 +351,7 @@ const MembersProj = [
     {
       key: "Raline",
       name: "Raline Maria da Silva",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
@@ -361,348 +361,348 @@ const MembersProj = [
     {
       key: "Graziella",
       name: "Graziella Silva Viana Doche",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Glórias Young Ambassadors"
+        area: "Glória's Young Ambassadors"
       }
     },
     {
       key: "Karen",
       name: "Karen Carneiro dos Reis",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Glórias Young Ambassadors"
+        area: "Glória's Young Ambassadors"
       }
     },
     {
       key: "Nathalia",
       name: "Nathália Rezende Magalhães",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Glórias Young Ambassadors"
+        area: "Glória's Young Ambassadors"
       }
     },
     {
       key: "Maria",
       name: "Maria Clara Gomes Vieira",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Glórias Young Ambassadors"
+        area: "Glória's Young Ambassadors"
       }
     },
     {
       key: "Sara",
       name: "Sara Lima Gaspar",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Glórias Young Ambassadors"
+        area: "Glória's Young Ambassadors"
       }
     },
     {
       key: "Alexandre",
       name: "Alexandre Galvão de Queiroz Rangel",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "AmandaSolidade",
       name: "Amanda da Solidade Silva",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Andre",
       name: "André Imbroisi Martins Borba",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Antonio",
       name: "Antonio Carlos Mariz Junior",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Daniel",
       name: "Daniel Aben-Athar Bemerguy",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "EduardoSantos",
       name: "Eduardo de Oliveira Santos",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Emily",
       name: "Emily Dias Sousa",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Fernanda",
       name: "Fernanda Rodrigues Coutinho",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Fernando",
       name: "Fernando Sobra Nóbrega",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Filipe",
       name: "Filipe Campos Nunes de Souza",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Gabriela",
       name: "Gabriela Magalhães Montezuma",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Giovanna",
       name: "Giovanna de Morais Hemetério",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Gustavo",
       name: "Gustavo Nunes Araújo",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Helena",
       name: "Helena Eichholz de Souza Sobrinho",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Henniton",
       name: "Henniton Oliveira Silva",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "HenriqueCamara",
       name: "Henrique Hoffman Câmara",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Katia",
       name: "Kátia Balduíno de Souza",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },   {
       key: "Leticia",
       name: "Letícia Moreschi Alves",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },   {
       key: "Lucas",
       name: "Lucas Bueno da Silva",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },   {
       key: "Marina",
       name: "Marina da Silva Palmieri",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },   
     {
       key: "MateusPedrosa",
       name: "Mateus Leite Pedrosa",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Nicolas",
       name: "Nicolas Caballero Lois",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "MateusPedrosa",
       name: "Mateus Leite Pedrosa",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Negrao",
       name: "Pedro Augusto Sousa Negrão",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "Renan",
       name: "Renan Lisboa de Jesus",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "RhogerisGomes",
       name: "Rhógeris Lisboa Gomes",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "RodrigoAlves",
       name: "Rodrigo Ayres Alves",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "SaraGaspar",
       name: "Sara Lima Gaspar",
-      job: "voluntario",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "SthefanieIole",
       name: "Sthéfanie Iole Lima de Sousa",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
     {
       key: "ThaisFreitas",
       name: "Thais Freitas Corrêa",
-      job: "voluntaria",
+      job: "volunteer",
       belong: true,
       lab: {
         active: true,
-        area: "Game - Glórias's World"
+        area: "Game-Glória's World"
       }
     },
   ];

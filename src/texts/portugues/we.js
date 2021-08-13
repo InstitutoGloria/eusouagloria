@@ -48,7 +48,7 @@ const we = {
         },
         gloria:{
             head:"Cristina Castro",
-            department:"Gloria"
+            department:"Glória"
         },
         steam:{
             head:"Cristina Castro",
@@ -56,7 +56,7 @@ const we = {
         },
         game:{
             head:"Cristina Castro",
-            department:"Jogo - Mundo de Glória"
+            department:"Jogo-Mundo de Glória"
         },
         unops:{
             head:"Cristina Castro",

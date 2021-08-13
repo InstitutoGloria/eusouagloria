@@ -15,15 +15,15 @@
             <slide v-for="(proj,index) in projs " :key="index" :index="proj.index">
                 <figcaption class="subtitle">{{$t(`${proj.department}`)}}</figcaption> 
                 <v-img 
-                  @click="filterMembersProj( $t(`${proj.department}`) )"
-                  :src='proj.url' 
+                  @click="filterMembersLocal( $t(`${proj.department}`))"
+                  :src="require(`../assets/images/projetos/${proj.src}`)"  
+                  aspect-ratio="1"
                 />
             </slide>   
             </carousel-3d>  
         </div>      
     </v-container>
       <div class="text-center container">
-        <!-- <v-img max-width="100" src="../assets/images/vector1.png"/> -->
         <p class=" text-center font-title">{{this.current_option}}</p>
       </div>
     
@@ -39,10 +39,13 @@
 </template>
 
 <script>
+import i18n from '@/plugins/i18n'
+
 import profile from "./CardProj";
 import {Carousel3d, Slide} from 'vue-carousel-3d'
 import { filterMembersProj} from "../functions/MembersProj.js";
 import { filterMembersProjEN} from "../functions/MembersProjEN.js";
+
 export default {
   components: {
     Carousel3d,
@@ -54,13 +57,13 @@ export default {
     left_team: [],
     current_option: "",
     projs: [
-                { department:"we_page.projects.gloria.department", head: "we_page.projects.gloria.head", url:"https://loremflickr.com/250/370/paris/?random=7", index:0},
-                { department:"we_page.projects.convida.department", head: "we_page.projects.convida.head", url:"https://loremflickr.com/250/370/paris/?random=5", index:1},
-                { department:"we_page.projects.game.department", head: "we_page.projects.game.head", url:"https://loremflickr.com/250/370/paris/?random=9", index:2},
-                { department:"we_page.projects.steam.department", head: "we_page.projects.steam.head", url:"https://loremflickr.com/250/370/paris/?random=10", index:3},
-                { department:"we_page.projects.unops.department", head: "we_page.projects.unops.head", url:"https://loremflickr.com/250/370/paris/?random=1", index:4},
-                { department:"we_page.projects.ambassador.department", head: "we_page.projects.ambassador.head", url:"https://loremflickr.com/250/370/paris/?random=3", index:5},
-                { department:"we_page.projects.map.department", head: "we_page.projects.map.head", url:"https://loremflickr.com/250/370/paris/?random=12", index:6},
+                { department:"we_page.projects.gloria.department", head: "we_page.projects.gloria.head", src:"gloria.png", index:0},
+                { department:"we_page.projects.convida.department", head: "we_page.projects.convida.head", src:"Convida.png", index:1},
+                { department:"we_page.projects.game.department", head: "we_page.projects.game.head", src:"O_mundo_de_gloria.png", index:2},
+                { department:"we_page.projects.steam.department", head: "we_page.projects.steam.head", src:"Steam_power.png", index:3},
+                { department:"we_page.projects.unops.department", head: "we_page.projects.unops.head", src:"UNOPS.png", index:4},
+                // { department:"we_page.projects.ambassador.department", head: "we_page.projects.ambassador.head", url:"https://loremflickr.com/250/370/paris/?random=3", index:5},
+                // { department:"we_page.projects.map.department", head: "we_page.projects.map.head", url:"https://loremflickr.com/250/370/paris/?random=12", index:6},
             ],
   }),
   filters: {
@@ -70,50 +73,59 @@ export default {
         arr_ret.push(new filterMembersProj().byKey(item));
       });
       return arr_ret.join(", ");
-    },
-    testeEN(value) {
-      let arr_ret = [];
-      value.map(function(item) {
-        arr_ret.push(new filterMembersProjEN().byKey(item));
-      });
-      return arr_ret.join(", ");
     }
   },
   computed: {
     convida() {
       return new filterMembersProj().byAreaCurrent("Convida");
     },
+    convidaEN() {
+      return new filterMembersProjEN().byAreaCurrent("Convida");
+    },
     gloria() {
-      return new filterMembersProj().byAreaCurrent("Gloria");
+      return new filterMembersProj().byAreaCurrent("Glória");
+    },
+    gloriaEN() {
+      return new filterMembersProjEN().byAreaCurrent("Glória");
     },
     steam() {
       return new filterMembersProj().byAreaCurrent("STEAM Girls");
     },
+    steamEN() {
+      return new filterMembersProjEN().byAreaCurrent("STEAM Girls");
+    },
     game() {
-      return new filterMembersProj().byAreaCurrent("Jogo - Mundo de Glória");
+      return new filterMembersProj().byAreaCurrent("Jogo-Mundo de Glória");
+    },
+    gameEN() {
+      return new filterMembersProjEN().byAreaCurrent("Game-Glória's World");
     },
     ambassador() {
       return new filterMembersProj().byAreaCurrent("Jovens Embaixadoras Glória");
     },
+    ambEN() {
+      return new filterMembersProEN().byAreaCurrent("Glória's Young Ambassadors");
+    },
     map() {
       return new filterMembersProj().byAreaCurrent("Mapa da Violência");
-    },
-    gameEN() {
-      return new filterMembersProjEN().byAreaCurrent("Game - Glória's World");
     },
     mapEN() {
       return new filterMembersProjEN().byAreaCurrent("Violence Map");
     },
-    ambEN() {
-      return new filterMembersProEN().byAreaCurrent("Glória Young Ambassadors");
-    },
     unop() {
+      return new filterMembersProj().byAreaCurrent("UNOPs");
+    },
+    unopEN() {
       return new filterMembersProjEN().byAreaCurrent("UNOPs");
     }
   },
   methods: {
-    renderTeam(){
-      $t('we_page.local.local') == 'en' ? filterMembersProEN($t(`${proj.department}`)) : filterMembersProj($t(`${proj.department}`))
+    filterMembersLocal(area){
+      if( i18n.locale == 'en'){
+        this.filterMembersProjEN(area)
+      } else if( i18n.locale =='pt-br'){
+        this.filterMembersProj(area)
+      }
     },
     filterMembersProj(area) {
       this.current_option = area; 
@@ -121,9 +133,9 @@ export default {
         this.current_team = this.convida;
       } else if (area == "Glória") {
         this.current_team = this.gloria;
-      } else if (area == "STEAM") {
+      } else if (area == "STEAM Girls") {
         this.current_team = this.steam;
-      } else if (area == "Jogo - Mundo de Glória" ) {
+      } else if (area == "Jogo-Mundo de Glória" ) {
         this.current_team = this.game;
       } else if (area == "Jovens Embaixadoras Glória") {
         this.current_team = this.ambassador;
@@ -136,19 +148,19 @@ export default {
     filterMembersProjEN(area) {
       this.current_option = area; 
       if (area == "Convida") {
-        this.current_team = this.convida;
+        this.current_team = this.convidaEN;
       } else if (area == "Glória") {
-        this.current_team = this.gloria;
-      } else if (area == "STEAM") {
-        this.current_team = this.steam;
-      } else if (area == "Game - Glória's World" ) {
+        this.current_team = this.gloriaEN;
+      } else if (area == "STEAM Girls") {
+        this.current_team = this.steamEN;
+      } else if (area == "Game-Glória's World" ) {
         this.current_team = this.gameEN;
       } else if (area == "Violence Map" ) {
         this.current_team = this.mapEN;
-      } else if (area == "Glória Young Ambassadors" ) {
+      } else if (area == "Glória's Young Ambassadors" ) {
         this.current_team = this.ambEN;
       } else if (area == "UNOPs") {
-        this.current_team = this.unop;
+        this.current_team = this.unopEN;
       }
     }
   }
@@ -156,6 +168,9 @@ export default {
 </script>
 
 <style scoped>
+.carousel-3d-slide{
+  background-color: transparent;
+}
 .team {
   padding: 2% 2% 10% 2%;
 }
@@ -171,6 +186,12 @@ export default {
 .sub-titulo {
   text-align: center;
   margin: 1.5em 0 1em 0;
+}
+.subtitle{
+  background-color: transparent;
+  font-size: 16pt;
+  font-weight: 900;
+  color: rgb(111, 113, 188);
 }
 .template-col {
   align-items: center;
