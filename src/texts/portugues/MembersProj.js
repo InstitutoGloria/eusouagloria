@@ -12,7 +12,7 @@ const MembersProj = [
   {
     key: "Beatriz",
     name: "Beatriz Carneiro Passos",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -22,7 +22,7 @@ const MembersProj = [
   {
     key: "Fernanda",
     name: "Fernanda Gama Neves da Silva",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -31,7 +31,7 @@ const MembersProj = [
   },{
     key: "Isabella",
     name: "Isabella Lopes de Oliveira",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -41,7 +41,7 @@ const MembersProj = [
   {
     key: "João",
     name: "João Paulo Frota Damasio",
-    job: "medicina",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -51,7 +51,7 @@ const MembersProj = [
   {
     key: "Kamilla",
     name: "Kamilla Gonçalves de Souza",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -61,7 +61,7 @@ const MembersProj = [
   {
     key: "Rachel",
     name: "Rachel Borille de Almeida",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -71,7 +71,7 @@ const MembersProj = [
   {
     key: "Rebeca",
     name: "Rebeca Barbara da Silva Rios",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -81,7 +81,7 @@ const MembersProj = [
   {
     key: "Savia",
     name: "Sávia Braga Tenório Dantas",
-    job: "medicina",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -91,7 +91,7 @@ const MembersProj = [
   {
     key: "Alomar",
     name: "Alomar K. Fernandes de Medeiros",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -101,7 +101,7 @@ const MembersProj = [
   {
     key: "Antonio",
     name: "Antônio Vinícius Nunes de Alencar",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -111,7 +111,7 @@ const MembersProj = [
   {
     key: "Heverton",
     name: "Heverton Barbosa da Mota Bezerra",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -121,7 +121,7 @@ const MembersProj = [
   {
     key: "Hugo",
     name: "Hugo Silva de Vasconcelos",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -131,7 +131,7 @@ const MembersProj = [
   {
     key: "Miriam",
     name: "Miriam do Carmo Souza",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -141,7 +141,7 @@ const MembersProj = [
   {
     key: "PedroAugusto",
     name: "Pedro Augusto Martinho Magnano",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -151,7 +151,7 @@ const MembersProj = [
   {
     key: "Rhógeris",
     name: "Rhógeris Lisboa Gomes",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -161,7 +161,7 @@ const MembersProj = [
   {
     key: "Victor",
     name: "Victor Cardoso Alves",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -171,7 +171,7 @@ const MembersProj = [
   {
     key: "Walesson",
     name: "Walesson Alves de Souza",
-    job: "desenvolvedor",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -181,7 +181,7 @@ const MembersProj = [
   {
     key: "Eduardo",
     name: "Eduardo de Oliveira Santos",
-    job: " ",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -189,19 +189,9 @@ const MembersProj = [
     }
   },    
   {
-    key: "Amanda",
-    name: "Amanda da Solidade Silva",
-    job: "comunicação",
-    belong: true,
-    lab: {
-      active: true,
-      area: "Convida"
-    }
-  },
-  {
-    key: "Ana",
-    name: "Ana Beatriz Castelo Branco Soares",
-    job: "comunicação",
+    key: "MoisesSousa",
+    name: "Moisés Silva de Sousa",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -211,7 +201,7 @@ const MembersProj = [
   {
     key: "Ingrid",
     name: "Ingrid Gaston Gonçalves",
-    job: "comunicação",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -219,9 +209,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Izabella",
-    name: "Izabella Cesar Ribeiro",
-    job: "comunicação",
+    key: "DeborahJunqueira",
+    name: "Débora Cellular Junqueira",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -229,9 +219,9 @@ const MembersProj = [
     }
   },
   {
-    key: "João",
-    name: "João Batista de Holanda Lopes",
-    job: "comunicação",
+    key: "PedroMagnago",
+    name: "Pedro Augusto Martinho Magnago",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -239,9 +229,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Laura",
-    name: "Laura Xavier e Silva",
-    job: "comunicação",
+    key: "SabrinaSantos",
+    name: "Sabrina Santos Gonçalves",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -249,9 +239,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Stephanie",
-    name: "Stephanie Nnunes Cavalcante",
-    job: "comunicação",
+    key: "CarolinaLima",
+    name: "Carolina Veiga Esteves Lima",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -259,9 +249,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Vinicius",
-    name: "Vinicius Rocha Cardozo da Silva",
-    job: "comunicação",
+    key: "BrunaAndrade",
+    name: "Bruna Boeckmann de Andrade",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -269,9 +259,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Isabella",
-    name: "Isabella Allende de Silva e Lima",
-    job: "Governança",
+    key: "HeitorVieira",
+    name: "Heitor Magalhães Vieira",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -279,9 +269,19 @@ const MembersProj = [
     }
   },
   {
-    key: "Isabella",
-    name: "Isabella Allende de Silva e Lima",
-    job: "Governança",
+    key: "GabrielleBarbosa",
+    name: "Gabrielle da Silva Barbosa",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Convida"
+    }
+  },
+  {
+    key: "NatáliaMachado",
+    name: "Natália Polidorio Machado",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -291,7 +291,7 @@ const MembersProj = [
   {
     key: "Alessandra",
     name: "Alessandra Carina de Jesus Gomes Pérez",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -301,17 +301,7 @@ const MembersProj = [
   {
     key: "AnaBea",
     name: "Ana Beatriz Castelo Branco SOares",
-    job: "voluntaria",
-    belong: true,
-    lab: {
-      active: true,
-      area: "UNOPs"
-    }
-  },
-  {
-    key: "AnaCarol",
-    name: "Ana Carolina de Andrade Lima Orlandi",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -321,7 +311,7 @@ const MembersProj = [
   {
     key: "Isadora",
     name: "Isadora Flores de Noronha Figueiredo Pantazopoulos",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -329,9 +319,9 @@ const MembersProj = [
     }
   },
   {
-    key: "Larrisa",
-    name: "Larissa Verginia do Nascimento Miranda",
-    job: "voluntaria",
+    key: "MarinaPolicarpo",
+    name: "Marina Mendonça Policarpo",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -339,19 +329,59 @@ const MembersProj = [
     }
   },
   {
-    key: "Waleska",
-    name: "Waleska Çuanna Borges Dias",
-    job: "voluntaria",
+    key: "PedroNegrao",
+    name: "Pedro Augusto de Sousa Negrão",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
-      area: "UNOPs"
+      area: "Glória"
+    }
+  },
+  {
+    key: "SabrinaSantos",
+    name: "Sabrina Santos Gonçalves",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Glória"
+    }
+  },
+  {
+    key: "HeitorVieira",
+    name: "Heitor Magalhães Vieira",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Glória"
+    }
+  },
+  {
+    key: "DanielPrado",
+    name: "Daniel Silva do Prado",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Glória"
+    }
+  },
+  {
+    key: "AnaBeatriz",
+    name: "Ana Beatriz Castelo branco Soares",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Glória"
     }
   },
   {
     key: "Raline",
     name: "Raline Maria da Silva",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -361,7 +391,7 @@ const MembersProj = [
   {
     key: "Graziella",
     name: "Graziella Silva Viana Doche",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -371,7 +401,7 @@ const MembersProj = [
   {
     key: "Karen",
     name: "Karen Carneiro dos Reis",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -381,7 +411,7 @@ const MembersProj = [
   {
     key: "Nathalia",
     name: "Nathália Rezende Magalhães",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -391,7 +421,7 @@ const MembersProj = [
   {
     key: "Maria",
     name: "Maria Clara Gomes Vieira",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -401,7 +431,7 @@ const MembersProj = [
   {
     key: "Sara",
     name: "Sara Lima Gaspar",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -411,7 +441,7 @@ const MembersProj = [
   {
     key: "Alexandre",
     name: "Alexandre Galvão de Queiroz Rangel",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -421,7 +451,7 @@ const MembersProj = [
   {
     key: "AmandaSolidade",
     name: "Amanda da Solidade Silva",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -431,7 +461,7 @@ const MembersProj = [
   {
     key: "Andre",
     name: "André Imbroisi Martins Borba",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -441,7 +471,7 @@ const MembersProj = [
   {
     key: "Antonio",
     name: "Antonio Carlos Mariz Junior",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -451,7 +481,7 @@ const MembersProj = [
   {
     key: "Daniel",
     name: "Daniel Aben-Athar Bemerguy",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -461,7 +491,7 @@ const MembersProj = [
   {
     key: "EduardoSantos",
     name: "Eduardo de Oliveira Santos",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -471,7 +501,7 @@ const MembersProj = [
   {
     key: "Emily",
     name: "Emily Dias Sousa",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -481,7 +511,7 @@ const MembersProj = [
   {
     key: "Fernanda",
     name: "Fernanda Rodrigues Coutinho",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -491,7 +521,16 @@ const MembersProj = [
   {
     key: "Fernando",
     name: "Fernando Sobra Nóbrega",
-    job: "voluntario",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },{
+    key: "FilipeLazzarini",
+    name: "Filipe Arthur Cócolo Santana Coutinho",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -501,7 +540,7 @@ const MembersProj = [
   {
     key: "Filipe",
     name: "Filipe Campos Nunes de Souza",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -511,7 +550,7 @@ const MembersProj = [
   {
     key: "Gabriela",
     name: "Gabriela Magalhães Montezuma",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -521,7 +560,7 @@ const MembersProj = [
   {
     key: "Giovanna",
     name: "Giovanna de Morais Hemetério",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -531,7 +570,17 @@ const MembersProj = [
   {
     key: "Gustavo",
     name: "Gustavo Nunes Araújo",
-    job: "voluntario",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "Hector",
+    name: "Hector Rocha Margittay",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -541,7 +590,7 @@ const MembersProj = [
   {
     key: "Helena",
     name: "Helena Eichholz de Souza Sobrinho",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -551,7 +600,17 @@ const MembersProj = [
   {
     key: "Henniton",
     name: "Henniton Oliveira Silva",
-    job: "voluntario",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "HenriqueMatos",
+    name: "Henrique Castro de Matos",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -561,7 +620,7 @@ const MembersProj = [
   {
     key: "HenriqueCamara",
     name: "Henrique Hoffman Câmara",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -571,7 +630,7 @@ const MembersProj = [
   {
     key: "Katia",
     name: "Kátia Balduíno de Souza",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -580,7 +639,7 @@ const MembersProj = [
   },   {
     key: "Leticia",
     name: "Letícia Moreschi Alves",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -589,7 +648,7 @@ const MembersProj = [
   },   {
     key: "Lucas",
     name: "Lucas Bueno da Silva",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -598,7 +657,7 @@ const MembersProj = [
   },   {
     key: "Marina",
     name: "Marina da Silva Palmieri",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -608,7 +667,7 @@ const MembersProj = [
   {
     key: "MateusPedrosa",
     name: "Mateus Leite Pedrosa",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -618,17 +677,7 @@ const MembersProj = [
   {
     key: "Nicolas",
     name: "Nicolas Caballero Lois",
-    job: "voluntario",
-    belong: true,
-    lab: {
-      active: true,
-      area: "Jogo-Mundo de Glória"
-    }
-  },
-  {
-    key: "MateusPedrosa",
-    name: "Mateus Leite Pedrosa",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -638,7 +687,7 @@ const MembersProj = [
   {
     key: "Negrao",
     name: "Pedro Augusto Sousa Negrão",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -648,7 +697,7 @@ const MembersProj = [
   {
     key: "Renan",
     name: "Renan Lisboa de Jesus",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -658,7 +707,7 @@ const MembersProj = [
   {
     key: "RhogerisGomes",
     name: "Rhógeris Lisboa Gomes",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -668,7 +717,7 @@ const MembersProj = [
   {
     key: "RodrigoAlves",
     name: "Rodrigo Ayres Alves",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -678,7 +727,7 @@ const MembersProj = [
   {
     key: "SaraGaspar",
     name: "Sara Lima Gaspar",
-    job: "voluntario",
+    job: "voluntário",
     belong: true,
     lab: {
       active: true,
@@ -688,7 +737,7 @@ const MembersProj = [
   {
     key: "SthefanieIole",
     name: "Sthéfanie Iole Lima de Sousa",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
@@ -698,11 +747,191 @@ const MembersProj = [
   {
     key: "ThaisFreitas",
     name: "Thais Freitas Corrêa",
-    job: "voluntaria",
+    job: "voluntária",
     belong: true,
     lab: {
       active: true,
       area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "ErikaLisboa",
+    name: "Erika Lisboa",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "PamelaReis",
+    name: "Pamela dos Reis Vieira",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "GabrielaDino",
+    name: "Gabriela Jorge Dino",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "DiegoMatias",
+    name: "Diego de Sousa Matias",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "DanielPontes",
+    name: "Daniel da Araújo Pontes",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Jogo-Mundo de Glória"
+    }
+  },
+  {
+    key: "IsabelaLima",
+    name: "Isabela Allende de Silva e Lima",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Governança"
+    }
+  },
+  {
+    key: "IzabellaRibeiro",
+    name: "Izabella César Ribeiro",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Governança"
+    }
+  },
+  {
+    key: "FernandoCruz",
+    name: "Fernando Almeida Farias Lima da Cruz",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Governança"
+    }
+  },
+  {
+    key: "AmandaSilva",
+    name: "Amanda da Solidade Silva",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "AnaBeatriz",
+    name: "Ana Beatriz Castelo Branco",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "VinniciusSilva",
+    name: "Vinnicius Rocha Cardozo da Silva",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "KarenReis",
+    name: "Karen Carneiro dos Reis",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "GuilhermeTonelli",
+    name: "Guilherme Tonelli",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "MariaVieira",
+    name: "Maria Luisa Rodrigues Marques Alvarenga",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "BrunaSantos",
+    name: "Bruna Rodrigues da Costa Santos",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "FernandaSantos",
+    name: "Fernanda dos Santos",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "LudmillaNaiva",
+    name: "Ludmilla Naiva",
+    job: "voluntária",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
+    }
+  },
+  {
+    key: "EduardoSilva",
+    name: "Eduardo Pinheiro Silva",
+    job: "voluntário",
+    belong: true,
+    lab: {
+      active: true,
+      area: "Comunicações"
     }
   },
 ];

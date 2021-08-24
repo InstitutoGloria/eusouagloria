@@ -50,9 +50,9 @@ const we = {
             head:"Cristina Castro",
             department:"Glória"
         },
-        steam:{
+        comm:{
             head:"Cristina Castro",
-            department:"STEAM Girls"
+            department:"Communications"
         },
         game:{
             head:"Cristina Castro",
@@ -66,9 +66,9 @@ const we = {
             head:"Cristina Castro",
             department:"Glória's Young Ambassador"
         },
-        map:{
+        gov:{
             head:"Cristina Castro",
-            department:"Violece Map"
+            department:"Governance"
         }
     },
     campaigns:{

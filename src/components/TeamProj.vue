@@ -60,10 +60,10 @@ export default {
                 { department:"we_page.projects.gloria.department", head: "we_page.projects.gloria.head", src:"gloria.png", index:0},
                 { department:"we_page.projects.convida.department", head: "we_page.projects.convida.head", src:"Convida.png", index:1},
                 { department:"we_page.projects.game.department", head: "we_page.projects.game.head", src:"O_mundo_de_gloria.png", index:2},
-                { department:"we_page.projects.steam.department", head: "we_page.projects.steam.head", src:"Steam_power.png", index:3},
+                { department:"we_page.projects.gov.department", head: "we_page.projects.gov.head", src:"Steam_power.png", index:3},
                 { department:"we_page.projects.unops.department", head: "we_page.projects.unops.head", src:"UNOPS.png", index:4},
                 // { department:"we_page.projects.ambassador.department", head: "we_page.projects.ambassador.head", url:"https://loremflickr.com/250/370/paris/?random=3", index:5},
-                // { department:"we_page.projects.map.department", head: "we_page.projects.map.head", url:"https://loremflickr.com/250/370/paris/?random=12", index:6},
+                { department:"we_page.projects.comm.department", head: "we_page.projects.comm.head", src:"Steam_power.png", index:5},
             ],
   }),
   filters: {
@@ -88,11 +88,11 @@ export default {
     gloriaEN() {
       return new filterMembersProjEN().byAreaCurrent("Glória");
     },
-    steam() {
-      return new filterMembersProj().byAreaCurrent("STEAM Girls");
+    gov() {
+      return new filterMembersProj().byAreaCurrent("Governança");
     },
-    steamEN() {
-      return new filterMembersProjEN().byAreaCurrent("STEAM Girls");
+    govEN() {
+      return new filterMembersProjEN().byAreaCurrent("Governance");
     },
     game() {
       return new filterMembersProj().byAreaCurrent("Jogo-Mundo de Glória");
@@ -106,11 +106,11 @@ export default {
     ambEN() {
       return new filterMembersProEN().byAreaCurrent("Glória's Young Ambassadors");
     },
-    map() {
-      return new filterMembersProj().byAreaCurrent("Mapa da Violência");
+    comm() {
+      return new filterMembersProj().byAreaCurrent("Comunicações");
     },
-    mapEN() {
-      return new filterMembersProjEN().byAreaCurrent("Violence Map");
+    commEN() {
+      return new filterMembersProjEN().byAreaCurrent("Communications");
     },
     unop() {
       return new filterMembersProj().byAreaCurrent("UNOPs");
@@ -133,14 +133,14 @@ export default {
         this.current_team = this.convida;
       } else if (area == "Glória") {
         this.current_team = this.gloria;
-      } else if (area == "STEAM Girls") {
-        this.current_team = this.steam;
+      } else if (area == "Comunicações") {
+        this.current_team = this.comm;
       } else if (area == "Jogo-Mundo de Glória" ) {
         this.current_team = this.game;
       } else if (area == "Jovens Embaixadoras Glória") {
         this.current_team = this.ambassador;
-      } else if (area == "Mapa da Violência") {
-        this.current_team = this.map;
+      } else if (area == "Governança") {
+        this.current_team = this.gov;
       } else if (area == "UNOPs") {
         this.current_team = this.unop;
       }
@@ -151,12 +151,12 @@ export default {
         this.current_team = this.convidaEN;
       } else if (area == "Glória") {
         this.current_team = this.gloriaEN;
-      } else if (area == "STEAM Girls") {
-        this.current_team = this.steamEN;
+      } else if (area == "Governance") {
+        this.current_team = this.govEN;
       } else if (area == "Game-Glória's World" ) {
         this.current_team = this.gameEN;
-      } else if (area == "Violence Map" ) {
-        this.current_team = this.mapEN;
+      } else if (area == "Communications" ) {
+        this.current_team = this.commEN;
       } else if (area == "Glória's Young Ambassadors" ) {
         this.current_team = this.ambEN;
       } else if (area == "UNOPs") {
