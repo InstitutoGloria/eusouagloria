@@ -5,6 +5,20 @@ const news = {
     button: "Open",
     news: [
         {
+        img: "elas_com_elas.jpg",
+        txt: "#111 - A Tecnologia no Combate à Violência contra Mulheres",
+        date: "01/09/2021",
+        link: "https://open.spotify.com/episode/50Ou29PLmjCL6TNyL5xDXN?si=v60FH-uOT0WTUhYVk8tOEQ&dl_branch=1&nd=1",
+        video: false
+        },
+        {
+        img: "youtube.jpg",
+        txt: "Estúdio News - 21/08/2021",
+        date: "21/08/2021",
+        link: "https://www.youtube.com/watch?v=vVH3y7WF1oI&t=4s&ab_channel=RecordNews",
+        video: false
+        },
+        {
         img: "tse-logo.png",
         txt: "TSE estreia nova campanha de incentivo à participação feminina na política",
         date: "02/08/2021",
