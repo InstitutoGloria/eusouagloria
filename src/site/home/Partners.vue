@@ -87,6 +87,11 @@ export default {
                 { file: "TechSoup.jpg" ,height: "200px", width: "200px"},
                 { file: "pactoglobal.jpg" ,height: "100px", width: "200px"},
                 { file: "Power-fi.png" ,height: "150px", width: "200px"},
+                { file: "artplan.png" ,height: "130px", width: "200px"},
+                { file: "biominas.png" ,height: "160px", width: "200px"},
+                { file: "estudologia.png" ,height: "130px", width: "200px"},
+                { file: "Stylorit.png" ,height: "130px", width: "200px"},
+
 
             ]
         }
