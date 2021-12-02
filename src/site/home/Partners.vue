@@ -91,6 +91,9 @@ export default {
                 { file: "biominas.png" ,height: "160px", width: "200px"},
                 { file: "estudologia.png" ,height: "130px", width: "200px"},
                 { file: "Stylorit.png" ,height: "130px", width: "200px"},
+                { file: "escal.png" ,height: "130px", width: "200px"},
+                { file: "Logo_Praxis.png" ,height: "200px", width: "250px"},
+
 
 
             ]
