@@ -93,8 +93,7 @@ export default {
                 { file: "Stylorit.png" ,height: "130px", width: "200px"},
                 { file: "escal.png" ,height: "130px", width: "200px"},
                 { file: "Logo_Praxis.png" ,height: "200px", width: "250px"},
-
-
+                { file: "logo_sisters.png" ,height: "200px", width: "250px"},
 
             ]
         }
