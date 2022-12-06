@@ -82,8 +82,6 @@ export default {
                 { file: "AD&M.png" ,height: "130px", width: "200px"},
                 { file: "cnpq.jpg" ,height: "100px", width: "200px"},
                 { file: "logo_genesys.png" ,height: "130px", width: "200px"},
-                { file: "ddd.png" ,height: "100px", width: "200px"},        
-                { file: "qubo.svg" ,height: "100px", width: "200px"},
                 { file: "TechSoup.jpg" ,height: "200px", width: "200px"},
                 { file: "pactoglobal.jpg" ,height: "100px", width: "200px"},
                 { file: "Power-fi.png" ,height: "150px", width: "200px"},
