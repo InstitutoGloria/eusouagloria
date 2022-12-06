@@ -75,7 +75,6 @@ export default {
                 { file: "mlabs.png" ,height: "150px", width: "200px"},
 
                 //third tier height 75(demarest too big 50)
-                { file: "ink.png" ,height: "100px", width: "200px"},
                 { file: "brasscom.png" ,height: "100px", width: "200px"},
                 { file: "caravela.png" ,height: "100px", width: "200px"},
                 { file: "handtalk.png" ,height: "150px", width: "200px"},
